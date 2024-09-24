@@ -1,0 +1,50 @@
+.card {
+    background-color: #3e2536; /* Fondo oscuro parecido al de la imagen */
+    border-radius: 20px; /* Bordes redondeados */
+    padding: 20px;
+    text-align: center;
+    width: 150px; /* Ancho de la tarjeta */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    color: white; /* Color del texto */
+}
+
+.icon-container {
+    background-color: white; /* Fondo blanco para el ícono */
+    border-radius: 50%; /* Para que sea circular */
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 10px; /* Centra el ícono y agrega espacio debajo */
+}
+
+.icon {
+    width: 30px; /* Tamaño del ícono */
+    height: auto;
+}
+
+.content h2 {
+    font-size: 40px; /* Tamaño del número */
+    margin: 0;
+}
+
+.content p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.btn {
+    background-color: white; /* Fondo del botón */
+    color: #3e2536; /* Color del texto del botón */
+    padding: 10px 20px;
+    border-radius: 20px; /* Bordes redondeados del botón */
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #ddd; /* Color al pasar el mouse */
+}

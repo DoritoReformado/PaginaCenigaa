@@ -1,0 +1,148 @@
+body {
+    background-color: #f9f9f9;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.concept-map ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.concept-text {
+    text-align: justify;
+}
+
+.concept-text.verde-t {
+    background: linear-gradient(rgba(115, 191, 0, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+    margin-top: -10px;
+    padding-top: 10px;
+    z-index: 8;
+    position: inherit;
+}
+.concept-text.azul-t {
+    background: linear-gradient(rgba(50, 139, 204, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+    margin-top: -10px;
+    padding-top: 10px;
+    z-index: 8;
+    position: inherit;
+}
+.concept-text.marron-t {
+    background: linear-gradient(rgba(115, 75, 39, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+    margin-top: -10px;
+    padding-top: 10px;
+    z-index: 8;
+    position: inherit;
+}
+
+
+.concept-map ul ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.concept-map li {
+    position: relative;
+    margin: 20px 0;
+}
+
+.concept {
+    padding: 15px 20px;
+    background-color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.cenigaa {
+    background: radial-gradient(ellipse at bottom, rgba(184, 134, 11, 0.7) 0%, rgba(255, 223, 85, 0.6) 15%, rgba(255, 255, 179, 0.5) 25%, rgba(255, 255, 255, 0) 35%);
+    ;
+    border-bottom: 2px solid black;
+}
+
+.verde {
+    background-color:#B5DC7A;
+    z-index: 11;
+    position: inherit;
+    border: 2px solid #B5DC7A;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.azul {
+    background-color: #BDD8EC;
+    border: 2px solid #BDD8EC;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 11;
+    position: inherit;
+}
+
+.marron {
+    background-color: #D5CAC0;
+    border: 2px solid #D5CAC0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 11;
+    position: inherit;
+}
+
+.concept-text {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #333;
+}
+
+.concept-map ul ul li {
+    margin: 0 30px;
+    width: 30%;
+}
+
+/* Líneas de conexión */
+.concept-map li.elemento::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    width: 2px;
+    height: 20px;
+    background: black;
+}
+
+.concept-map ul ul li::before {
+    top: -20px;
+}
+
+.concept-map ul ul li::after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    width: 50px;
+    height: 0px;
+    background: black;
+}
+
+.concept-map ul ul li:first-child::after {
+    left: 50%;
+    width: calc(50% + 50px);
+}
+
+.concept-map ul ul li:last-child::after {
+    left: -50px;
+    width: calc(50% + 50px);
+}
+
+.concept-map ul ul li:not(:first-child):not(:last-child)::after {
+    left: -50px;
+    width: 100px;
+}
+
+#logo_mapa {
+    width: 50%;
+}
+
+#logo_cenigaa_mapa {
+    margin: 0 auto;
+}
