@@ -146,3 +146,25 @@ body {
 #logo_cenigaa_mapa {
     margin: 0 auto;
 }
+
+#grafica_svg_psicologia{
+    width: 100%;
+    border:#fff 2px;
+}
+
+body#grafico_svg_psicologia{
+    color:#fff;
+}
+
+#cenigaa_timeline{
+    width: 100%;
+    border:#fff 2px;
+}
+
+.row.tarjetas{
+    margin-bottom: 2%;
+}
+
+.cards-img{
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.8) 40%, transparent 70%);;
+}
