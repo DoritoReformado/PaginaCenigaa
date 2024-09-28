@@ -872,3 +872,82 @@ td {
   background-color: #ddd;
   /* Color al pasar el mouse */
 }
+
+/* Tarjetas Custom Rut*/
+
+.contenedor-tarjetas-contenedor{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.tarjetas-contenedor {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-around; /* Centramos las tarjetas horizontalmente */
+  align-items: flex-start;
+  gap: 20px; /* Añadimos espacio entre las tarjetas */
+  padding: 20px;
+}
+
+.tarjeta-custom {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 30%;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  border-radius: 5%;
+}
+
+.tarjeta-custom h2 {
+  margin-top: 0;
+}
+
+.tarjeta-custom p {
+  margin: 15px 0;
+}
+
+.tarjeta-custom button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tarjeta-custom button:hover {
+  background-color: #45a049;
+}
+
+.tarjeta-central {
+  transform: translateY(-20px);
+}
+.imagen_tarjeta{
+  width: 100%;
+  border-radius: 5%;
+}
+
+#titulo_escritura{
+  padding-top: 0.01%;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #4CAF50; /* Verde claro */
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.button {
+  background-color: #45a049; /* Verde un poco más oscuro al hacer hover */
+}

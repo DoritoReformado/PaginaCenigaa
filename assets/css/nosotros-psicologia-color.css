@@ -171,8 +171,6 @@ body#grafico_svg_psicologia{
 
 #estructura_organizacional{
     width: 100%;
-    border:#fff 2px;
-    justify-content: center;
 }
 
 
@@ -271,3 +269,5 @@ body#grafico_svg_psicologia{
 .fa-solid.fa-angles-right.fa-2x{
     color: rgb(211, 211, 211);
 }
+
+

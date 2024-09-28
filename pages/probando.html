@@ -1,22 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../assets/css/probando.css">
+    <title>Tarjetas en fila</title>
+    <style>
+        .tarjetas-contenedor {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 20px;
+        }
+        
+        .tarjeta-custom {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 30%;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            border-radius: 5%;
+        }
+
+        .tarjeta-custom h2 {
+            margin-top: 0;
+        }
+
+        .tarjeta-custom p {
+            margin: 15px 0;
+        }
+
+        .tarjeta-custom button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .tarjeta-custom button:hover {
+            background-color: #45a049;
+        }
+
+        .tarjeta-central {
+            transform: translateY(-20px);
+        }
+        .imagen_tarjeta{
+            width: 100%;
+            border-radius: 5%;
+        }
+    </style>
 </head>
 <body>
-    <div class="card">
-        <div class="icon-container">
-            <img src="../assets/img/pdf.png" alt="Ícono del documento" class="icon">
+
+    <div class="tarjetas-contenedor">
+        <div class="tarjeta-custom">
+            <img class="imagen_tarjeta" src="../assets/img/14aFeria1.jpg">
+            <h2>Título 1</h2>
+            <p>Descripción breve para la primera tarjeta.</p>
+            <button>Ir al archivo</button>
         </div>
-        <div class="content">
-            <h2>1</h2>
-            <p>DENOMINACIÓN, IDENTIFICACIÓN Y EL DOMICILIO DE LA ENTIDAD.</p>
-            <a href="" target="_blank" class="btn">Click para ver</a>
+
+        <div class="tarjeta-custom tarjeta-central">
+            <img class="imagen_tarjeta" src="../assets/img/14aFeria1.jpg">
+            <h2>Título 2</h2>
+            <p>Descripción breve para la segunda tarjeta, que está ligeramente más arriba.</p>
+            <button>Ir al archivo</button>
+        </div>
+
+        <div class="tarjeta-custom">
+            <img class="imagen_tarjeta" src="../assets/img/14aFeria1.jpg">
+            <h2>Título 3</h2>
+            <p>Descripción breve para la tercera tarjeta.</p>
+            <button>Ir al archivo</button>
         </div>
     </div>
-    
+
 </body>
 </html>
