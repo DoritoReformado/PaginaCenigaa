@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -567,9 +567,9 @@ body {
     justify-content: center;
     align-items: flex-start;
     width: 100%; /* Ocupa todo el ancho */
-    padding: 40px 0; /* Espaciado superior e inferior */
-    margin-top: 5rem;
+    margin-top: 7rem;
     box-sizing: border-box;
+    
 }
 
 /* Carta */
@@ -579,17 +579,25 @@ body {
     grid-template-rows: auto auto auto;
     gap: 10px;
     background-color: #fff;
-    border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     width: 100%; /* Asegura que la carta ocupe el 100% del contenedor */
     max-width: 1200px; /* Establece un ancho máximo */
     transition: transform 0.3s ease;
-    margin-bottom: 2%;
+    margin-bottom: 5%;
+    border: 2px solid #c3c3c3;
+
+    background-image: url("../../assets/svg/cenigaa_transparencias.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    
 }
 
 .card:hover {
     transform: scale(1.05); /* Efecto hover */
 }
+
 
 /* Imagen y otros elementos dentro de la carta */
 .card img {
@@ -634,4 +642,8 @@ body {
 .ods_image {
     width: 100px;
     height: 100px;
+}
+
+.subtitulo{
+    font-weight: bold;
 }
