@@ -1,20 +1,144 @@
-body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+html {
+    scroll-behavior: smooth;
+}
+
+section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0;
-    background-color: #f0f0f0;
 }
 
+#inicio {
+    background-color: #F6830F;
+}
+
+#a1930 {
+    background-color: #FCF8E8;
+}
+
+#a1954 {
+    background-color: #D4E2D4;
+}
+
+#a1962 {
+    background-color: #ECB390;
+}
+
+#a1970 {
+    background-color: #E5DF88;
+}
+
+#a1978 {
+    background-color: #FFE5B9;
+}
+
+#a1986 {
+    background-color: #EBD4D4;
+}
+
+#a1998 {
+    background-color: #C9CBFF;
+}
+
+#a2002 {
+    background-color: #A6A9B6;
+}
+
+#a2006 {
+    background-color: #F5F4F4;
+}
+
+#a2010 {
+    background-color: #FCD1D1;
+}
+
+#a2014 {
+    background-color: #ECE2E1;
+}
+
+#inicio h1 {
+    font-size: 68px;
+    letter-spacing: 5px;
+}
+
+section h2 {
+    font-size: 50px;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+section img {
+    margin-top: 30px;
+    max-width: 300px;
+}
+
+.contenedor-tiempo {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%) translateY(85vh);
+    display: flex;
+    justify-content: center;
+    z-index: 9;
+}
+
+.contenedor-tiempo .linea {
+    width: 900px;
+    position: absolute;
+    top: 30px;
+    height: 2px;
+    background-color: black;
+    z-index: -2;
+
+}
+
+.fecha {
+    display: inline-block;
+    font-size: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #2D4059;
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scale: 1;
+    transition: background-color, transform .5s linear;
+
+}
+
+.seleccionado {
+    transform: scale(1.2);
+    background-color: #EA5455;
+    color: #000;
+    font-weight: bold;
+}
+
+@media (max-width: 980px) {
+    .contenedor-tiempo {
+        flex-direction: column;
+        transform: translateX(30vw);
+    }
+
+    .contenedor-tiempo .linea {
+        display: none;
+    }
+}
 
 /*Navbar With Hover - Bootstrap*/
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 .site-navbar {
     margin-bottom: 0px;
     z-index: 1999;
     position: absolute;
-    top: 1rem;
+    top: 2rem;
     width: 100%;
 }
 
@@ -226,9 +350,9 @@ body {
 .site-mobile-menu {
     width: 300px;
     position: fixed;
-    right: 10px;
+    right: 0;
     z-index: 2000;
-    /* padding-top: 20px; */
+    padding-top: 20px;
     background: #fff;
     height: calc(100vh);
     -webkit-transform: translateX(110%);
@@ -428,7 +552,8 @@ body {
 .pie-pagina {
     width: 100%;
     background-color: #0d2033;
-    /* background-color: #FFF; */
+    position: relative;
+    z-index: 10;
 }
 
 .pie-pagina .grupo-1 {
@@ -508,19 +633,17 @@ body {
     text-decoration: none;
 }
 
-@media screen and (max-width: 700px) {
-    .pie-pagina .group-1 {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .pie-pagina .group-1 .red-social {
-        flex-direction: row;
+@media screen and (max-width:800px) {
+    .pie-pagina .grupo-1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
     }
 }
 
 @media screen and (max-width:900px) {
-    .pie-pagina .group-1 {
+    .pie-pagina .grupo-1 {
         width: 90%;
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 20px;
@@ -534,6 +657,7 @@ body {
     }
 }
 
+/*<!======Whatsapp Button======!>*/
 .btn-wsp {
     position: fixed;
     width: 55px;
@@ -556,94 +680,108 @@ body {
     background: #FFF;
 }
 
+
 .fondo-cenigaa {
     background-image: linear-gradient(to right, rgb(10, 10, 11), rgb(50, 49, 61), rgb(10, 10, 11)), url("../img/cenigaa_blanconegro.jfif");
     width: 100%;
 }
 
-/* Contenedor de la carta */
-#primera_Carta {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    width: 100%; /* Ocupa todo el ancho */
-    margin-top: 7rem;
-    box-sizing: border-box;
-    
-}
-
-/* Carta */
-.card {
-    display: grid;
-    grid-template-columns: 2fr 3fr;
-    grid-template-rows: auto auto auto;
-    gap: 10px;
-    background-color: #fff;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    width: 100%; /* Asegura que la carta ocupe el 100% del contenedor */
-    max-width: 1200px; /* Establece un ancho máximo */
-    transition: transform 0.3s ease;
-    margin-bottom: 5%;
-    border: 2px solid #c3c3c3;
-
-    background-image: url("../../assets/svg/cenigaa_transparencias.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    
-}
-
-.card:hover {
-    transform: scale(1.05); /* Efecto hover */
-}
-
-
-/* Imagen y otros elementos dentro de la carta */
-.card img {
-    grid-row: 1;
-    object-fit: cover;
-    border-right: 2px solid #e0e0e0;
-}
-
-.titulo {
-    grid-column: span 2;
-    padding: 20px;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #2c3e50;
-    background-color: #ecf0f1;
-    transition: background-color 0.3s ease;
-}
-
-.factores,
-.importancia {
-    grid-column: span 2;
-    padding: 20px;
-    font-size: 1rem;
-    color: #34495e;
-    transition: background-color 0.3s ease;
-}
-
-.objetivos,
-.lineamientos {
-    grid-column: span 2;
+/*Inicio del css del loader */
+.loading-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 1.5rem;
     align-items: center;
-    padding: 15px;
-    font-size: 1rem;
-    background-color: #34495e;
-    color: white;
-    transition: background-color 0.3s ease;
+    justify-content: center;
+    color: #191654;
 }
 
-.ods_image {
-    width: 100px;
-    height: 100px;
+#svg {
+    height: 150px;
+    width: 150px;
+    stroke: white;
+    fill-opacity: 0;
+    stroke-width: 3px;
+    stroke-dasharray: 4500;
+    animation: draw 8s ease;
 }
 
-.subtitulo{
-    font-weight: bold;
+@keyframes draw {
+    0% {
+        stroke-dashoffset: 4500;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+.name-container {
+    height: 30px;
+    overflow: hidden;
+}
+
+.logo-name {
+    color: #fff;
+    font-size: 90%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-left: 10px;
+    font-weight: bolder;
+}
+
+/*fin del css del loader */
+
+
+/* Estilo para los títulos */
+.styled-title {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    position: relative;
+    margin: 20px 0;
+    padding: 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4), -2px -2px 3px rgba(255, 255, 255, 0.6);
+
+}
+
+/* Decoración con línea debajo del título */
+.styled-title::after {
+    content: '';
+    width: 50px;
+    height: 4px;
+    background-color: #3498db; /* Color decorativo (azul) */
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+/* Sombra sutil para darle profundidad */
+.styled-title::before {
+    content: '';
+    width: 100%;
+    height: 8px;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    border-radius: 0 0 5px 5px;
+}
+
+/* Ajuste para pantallas más pequeñas */
+@media screen and (max-width: 600px) {
+    .styled-title {
+        font-size: 1.5rem;
+    }
 }

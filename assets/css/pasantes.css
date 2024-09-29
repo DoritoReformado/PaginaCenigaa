@@ -126,7 +126,7 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  min-width: 200px;
+  min-width: 250px;
 }
 .site-navbar .site-navigation .site-menu .has-children .dropdown > li > a {
   padding: 9px 20px;
@@ -356,9 +356,7 @@
   
   /*<!======INTRO JOVENES INVESTIGADORES======!>*/
   
-  section {
-    padding: 60px 0;
-  }
+
 
   #contador{
     margin-right: 15px;
@@ -597,21 +595,18 @@
     }
     
     section {
-    padding: 60px 0;
     overflow: hidden;
     }
     
     .section-title {
     text-align: center;
-    padding-bottom: 30px;
+    margin-top: 7rem;
     }
     
     .section-title h2 {
     font-size: 32px;
     font-weight: bold;
     text-transform: uppercase;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
     position: relative;
     color: tomato;
     }
@@ -630,29 +625,34 @@
 
 /*<!====Counter====!>*/
 .counter-box {
-	display: block;
+	display: flex;
 	background: #f6f6f6;
-	padding: 20px 5px;
+	padding: 0.5rem 0.5rem;
 	text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+p{
+  margin-bottom: 0px;
 }
 
 .counter-box p {
-	margin: 5px 0 0;
 	padding: 0;
 	color: #909090;
-	font-size: 18px;
-	font-weight: 500
+	font-size: 14px;
+	font-weight: 700
 }
 
 .counter-box i {
-	font-size: 60px;
-	margin: 0 0 15px;
+	font-size: 30px;
 	color: #d2d2d2
 }
 
 .counter { 
 	display: block;
-	font-size: 32px;
+	font-size: 20px;
 	font-weight: 700;
 	color: #666;
 	line-height: 28px
@@ -796,3 +796,8 @@
     background-image: linear-gradient(to right, rgb(10, 10, 11),rgb(50, 49, 61),rgb(10, 10, 11)), url("../img/cenigaa_blanconegro.jfif");
     width: 100%;
   }
+.four.col-md-2{
+  width: 10vw;
+  margin-bottom: 1rem;
+  
+}

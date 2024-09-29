@@ -1,82 +1,185 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarjetas en fila</title>
+    <title>Contract Information Card</title>
     <style>
-        .tarjetas-contenedor {
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
             display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            padding: 20px;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
-        
-        .tarjeta-custom {
-            background-color: white;
+
+        .row{
+            display: flex;
+            width: 60%;
+        }
+
+        .card {
+            background-color: #ffffff;
+            width: 50%;
             border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            width: 30%;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
             padding: 20px;
+            margin: 20px;
+            font-family: 'Segoe UI', sans-serif;
+            color: #333;
+        }
+
+        .card h3 {
             text-align: center;
-            transition: transform 0.3s ease;
-            border-radius: 5%;
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #2c3e50;
         }
 
-        .tarjeta-custom h2 {
-            margin-top: 0;
+        .card .info {
+            margin-bottom: 15px;
         }
 
-        .tarjeta-custom p {
-            margin: 15px 0;
+        .card .info label {
+            font-weight: bold;
+            color: #555;
+            display: block;
         }
 
-        .tarjeta-custom button {
-            background-color: #4CAF50;
+        .card .info p {
+            font-size: 16px;
+            margin-top: 5px;
+            padding: 10px;
+            background-color: #f7f7f7;
+            border-radius: 5px;
+            border: 1px solid #eee;
+            color: #333;
+        }
+
+        .card .info p.long {
+            overflow-y: auto;
+        }
+
+        .card .info p:hover {
+            background-color: #eef6fc;
+            transition: 0.3s ease;
+        }
+
+        .card-footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .card-footer button {
+            background-color: #3498db;
             color: white;
             padding: 10px 20px;
             border: none;
             border-radius: 5px;
+            font-size: 16px;
             cursor: pointer;
         }
 
-        .tarjeta-custom button:hover {
-            background-color: #45a049;
-        }
-
-        .tarjeta-central {
-            transform: translateY(-20px);
-        }
-        .imagen_tarjeta{
-            width: 100%;
-            border-radius: 5%;
+        .card-footer button:hover {
+            background-color: #2980b9;
         }
     </style>
 </head>
+
 <body>
+    <section class="row">
+        <div class="card">
+            <h3>Información del Contrato</h3>
 
-    <div class="tarjetas-contenedor">
-        <div class="tarjeta-custom">
-            <img class="imagen_tarjeta" src="../assets/img/14aFeria1.jpg">
-            <h2>Título 1</h2>
-            <p>Descripción breve para la primera tarjeta.</p>
-            <button>Ir al archivo</button>
+            <div class="info">
+                <label>Tipo de Contratista</label>
+                <p>Compañía</p>
+            </div>
+
+            <div class="info">
+                <label>Nombre del Contratante</label>
+                <p>Juan Pérez</p>
+            </div>
+
+            <div class="info">
+                <label>Valor del Contrato</label>
+                <p>$500,000</p>
+            </div>
+
+            <div class="info">
+                <label>Vigencia del Contrato</label>
+                <p>2024-2025</p>
+            </div>
+
+            <div class="info">
+                <label>Objeto del Contrato</label>
+                <p class="long">Desarrollo de una plataforma web para la gestión de proyectos, seguimiento de tareas, y
+                    análisis de datos de rendimiento.</p>
+            </div>
+
+            <div class="info">
+                <label>Recursos</label>
+                <p>Equipo de desarrollo, servidores, herramientas de software</p>
+            </div>
+
+            <div class="info">
+                <label>Aliados</label>
+                <p class="long">TechCorp, Grupo de Innovación Digital, Marketing Solutions.</p>
+            </div>
+
+            <div class="card-footer">
+                <button>Ver Detalles</button>
+            </div>
         </div>
 
-        <div class="tarjeta-custom tarjeta-central">
-            <img class="imagen_tarjeta" src="../assets/img/14aFeria1.jpg">
-            <h2>Título 2</h2>
-            <p>Descripción breve para la segunda tarjeta, que está ligeramente más arriba.</p>
-            <button>Ir al archivo</button>
-        </div>
+        <div class="card">
+            <h3>Información del Contrato</h3>
 
-        <div class="tarjeta-custom">
-            <img class="imagen_tarjeta" src="../assets/img/14aFeria1.jpg">
-            <h2>Título 3</h2>
-            <p>Descripción breve para la tercera tarjeta.</p>
-            <button>Ir al archivo</button>
+            <div class="info">
+                <label>Tipo de Contratista</label>
+                <p>Compañía</p>
+            </div>
+
+            <div class="info">
+                <label>Nombre del Contratante</label>
+                <p>Juan Pérez</p>
+            </div>
+
+            <div class="info">
+                <label>Valor del Contrato</label>
+                <p>$500,000</p>
+            </div>
+
+            <div class="info">
+                <label>Vigencia del Contrato</label>
+                <p>2024-2025</p>
+            </div>
+
+            <div class="info">
+                <label>Objeto del Contrato</label>
+                <p class="long">Desarrollo de una plataforma web para la gestión de proyectos, seguimiento de tareas, y
+                    análisis de datos de rendimiento.</p>
+            </div>
+
+            <div class="info">
+                <label>Recursos</label>
+                <p>Equipo de desarrollo, servidores, herramientas de software</p>
+            </div>
+
+            <div class="info">
+                <label>Aliados</label>
+                <p class="long">TechCorp, Grupo de Innovación Digital, Marketing Solutions.</p>
+            </div>
+
+            <div class="card-footer">
+                <button>Ver Detalles</button>
+            </div>
         </div>
-    </div>
+    </section>
 
 </body>
+
 </html>

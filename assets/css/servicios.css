@@ -126,7 +126,7 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    min-width: 200px;
+    min-width: 250px;
   }
   .site-navbar .site-navigation .site-menu .has-children .dropdown > li > a {
     padding: 9px 20px;
@@ -710,4 +710,165 @@ width: 100%;
 .cards-img:hover{
   transform: scale(1.1);
   transition: 1.6s;
+}
+
+/*nuevas cards*/
+
+.custom-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:5%;
+}
+
+.custom-card {
+  background-color: #ffffff;
+  width: 300px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2); /* Aumenta la sombra en hover */
+}
+
+.custom-card-icon {
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+/* Estilos personalizados para cada tarjeta */
+.custom-card-capacitaciones {
+  border: 2px solid #2ecc71;
+}
+
+.custom-card-capacitaciones .custom-card-icon {
+  color: #2ecc71;
+}
+
+.custom-card-consultoria {
+  border: 2px solid #3498db;
+}
+
+.custom-card-consultoria .custom-card-icon {
+  color: #3498db;
+}
+
+.custom-card-servicios {
+  border: 2px solid #e67e22;
+}
+
+.custom-card-servicios .custom-card-icon {
+  color: #e67e22;
+}
+
+/* Estilos generales para el texto */
+.custom-card h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.custom-card p {
+  font-size: 16px;
+  color: #7f8c8d;
+}
+
+
+/* Estilos generales para las tarjetas de servicios */
+.service-card {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos de los íconos en las tarjetas */
+.service-card .icon {
+  margin: 0 auto 20px auto;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  padding: 15px;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-card .icon i {
+  font-size: 30px;
+}
+
+/* Estilos para los títulos de las tarjetas */
+.service-card .title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Estilos para las listas de servicios */
+.service-card .service-list {
+  text-align: left;
+  padding-left: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.service-card .service-list li {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.4;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.service-card .service-list li i {
+  font-size: 18px;
+  color: #68A4C4;
+  margin-right: 10px;
+}
+
+/* Colores personalizados para cada tarjeta */
+.icon-box-pink .icon {
+  background: #fceef3;
+}
+
+.icon-box-pink .icon i {
+  color: #ff689b;
+}
+
+.icon-box-cyan .icon {
+  background: #e6fdfc;
+}
+
+.icon-box-cyan .icon i {
+  color: #3fcdc7;
+}
+
+.icon-box-green .icon {
+  background: #eafde7;
+}
+
+.icon-box-green .icon i {
+  color: #41cf2e;
+}
+
+
+#segunda_seccion{
+  margin-top: 2%;
 }
