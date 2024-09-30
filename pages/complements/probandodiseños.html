@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Línea de Tiempo</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .carrusel-linea-tiempo {
+            position: relative;
+            max-width: 750px;
+            width: 100%;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            background-color: white;
+        }
+
+        .contenedor-carrusel {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            touch-action: pan-y;
+        }
+
+        .elemento-carrusel {
+            min-width: 100%;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .año-evento {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #0071bc;
+        }
+
+        .contenido-evento h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #4d4d4d;
+        }
+
+        .contenido-evento p {
+            font-size: 14px;
+            text-align: justify;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="carrusel-linea-tiempo">
+        <div class="contenedor-carrusel" id="contenedor-carrusel">
+            <div class="elemento-carrusel activo">
+                <div class="año-evento">2010</div>
+                <div class="contenido-evento">
+                    <h3>Creación del Centro de Investigación</h3>
+                    <p>El Centro de Investigación en Ciencias y Recursos GeoAgroAmbientales - CENIGAA fue fundado...</p>
+                </div>
+            </div>
+
+            <div class="elemento-carrusel">
+                <div class="año-evento">2011 - 2014</div>
+                <div class="contenido-evento">
+                    <h3>Iniciativas CTel con aliados estratégicos</h3>
+                    <p>Se generaron iniciativas de CTel en colaboración con la Universidad Surcolombiana...</p>
+                </div>
+            </div>
+
+            <div class="elemento-carrusel">
+                <div class="año-evento">2015</div>
+                <div class="contenido-evento">
+                    <h3>Certificación ISO y creación del NRMA</h3>
+                    <p>Obtuvo la certificación de calidad bajo la norma ISO 9001:2008 para las actividades de...</p>
+                </div>
+            </div>
+
+            <div class="elemento-carrusel">
+                <div class="año-evento">2016 - 2017</div>
+                <div class="contenido-evento">
+                    <h3>Summer Research Camp</h3>
+                    <p>Generación de la iniciativa Summer Research Camp (SRC) para la apropiación social de conocimiento...</p>
+                </div>
+            </div>
+
+            <div class="elemento-carrusel">
+                <div class="año-evento">2018 - 2019</div>
+                <div class="contenido-evento">
+                    <h3>Transformación Digital del Agro Huilense</h3>
+                    <p>Logra el reconocimiento social en la región Surcolombiana...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let indiceActual = 0;
+        let inicioX = 0;
+        let finX = 0;
+
+        const contenedorCarrusel = document.getElementById('contenedor-carrusel');
+        const elementos = document.querySelectorAll('.elemento-carrusel');
+        const totalElementos = elementos.length;
+
+        contenedorCarrusel.addEventListener('touchstart', (evento) => {
+            inicioX = evento.touches[0].clientX;
+        });
+
+        contenedorCarrusel.addEventListener('touchend', (evento) => {
+            finX = evento.changedTouches[0].clientX;
+            manejarDeslizamiento();
+        });
+
+        function manejarDeslizamiento() {
+            if (inicioX > finX + 50) {
+                // Deslizar hacia la izquierda (siguiente)
+                moverCarrusel(1);
+            } else if (inicioX < finX - 50) {
+                // Deslizar hacia la derecha (anterior)
+                moverCarrusel(-1);
+            }
+        }
+
+        function moverCarrusel(direccion) {
+            indiceActual += direccion;
+
+            if (indiceActual < 0) {
+                indiceActual = totalElementos - 1;
+            } else if (indiceActual >= totalElementos) {
+                indiceActual = 0;
+            }
+
+            document.querySelector('.contenedor-carrusel').style.transform = `translateX(-${indiceActual * 100}%)`;
+        }
+
+    </script>
+
+</body>
+
+</html>

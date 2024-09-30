@@ -623,6 +623,8 @@ section {
 }
 
 .service-details .card {
+  display: flex;
+  justify-content: center;
   border: 0;
   padding: 0 30px;
   margin-bottom: 60px;
@@ -630,8 +632,9 @@ section {
 }
 
 .service-details .card-img {
-  width: calc(100% + 60px);
-  margin-left: 50px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
   overflow: hidden;
   z-index: 9;
   border-radius: 0;
@@ -883,3 +886,10 @@ section {
 }
 
 /*fin del css del loader */
+
+.text-center{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

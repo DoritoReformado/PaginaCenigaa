@@ -23,6 +23,7 @@ body {
     z-index: 8;
     position: inherit;
 }
+
 .concept-text.azul-t {
     background: linear-gradient(rgba(50, 139, 204, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
     margin-top: -10px;
@@ -30,6 +31,7 @@ body {
     z-index: 8;
     position: inherit;
 }
+
 .concept-text.marron-t {
     background: linear-gradient(rgba(115, 75, 39, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
     margin-top: -10px;
@@ -65,7 +67,7 @@ body {
 }
 
 .verde {
-    background-color:#B5DC7A;
+    background-color: #B5DC7A;
     z-index: 11;
     position: inherit;
     border: 2px solid #B5DC7A;
@@ -147,29 +149,30 @@ body {
     margin: 0 auto;
 }
 
-#grafica_svg_psicologia{
+#grafica_svg_psicologia {
     width: 100%;
-    border:#fff 2px;
+    border: #fff 2px;
 }
 
-body#grafico_svg_psicologia{
-    color:#fff;
+body#grafico_svg_psicologia {
+    color: #fff;
 }
 
-#cenigaa_timeline{
+#cenigaa_timeline {
     width: 100%;
-    border:#fff 2px;
+    border: #fff 2px;
 }
 
-.row.tarjetas{
+.row.tarjetas {
     margin-bottom: 2%;
 }
 
-.cards-img{
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.8) 40%, transparent 70%);;
+.cards-img {
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.8) 40%, transparent 70%);
+    ;
 }
 
-#estructura_organizacional{
+#estructura_organizacional {
     width: 100%;
 }
 
@@ -266,8 +269,187 @@ body#grafico_svg_psicologia{
 }
 
 
-.fa-solid.fa-angles-right.fa-2x{
+.fa-solid.fa-angles-right.fa-2x {
     color: rgb(211, 211, 211);
 }
 
+#grafica_svg_psicologia {
+    min-width: 1200px;
+    min-height: 1000px;
+}
 
+
+.container_mobile {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    /*background-color: #fff;*/
+    /*padding: 20px;*/
+    border-radius: 10px;
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.verde {
+    background-color: #e0f7e9;
+    border-left: 5px solid #76b041;
+}
+
+.azul {
+    background-color: #e0f0fc;
+    border-left: 5px solid #0071bc;
+}
+
+.marron {
+    background-color: #f7e9e0;
+    border-left: 5px solid #8b5e3c;
+}
+
+.section-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.imagen_explicacion img {
+    width: 80%;
+
+}
+
+.section.azul .imagen_explicacion img {
+    width: 60%;
+
+}
+
+.explicacion p {
+    margin: 2vh 0vh 2vh 0vh;
+    line-height: 2vh;
+    font-size: 1.5vh;
+    text-align: justify;
+}
+
+.carrusel-linea-tiempo {
+    display: none;
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    margin-bottom: 3vh;
+}
+
+.contenedor-carrusel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    touch-action: pan-y;
+}
+
+.elemento-carrusel {
+    min-width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.año-evento {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #0071bc;
+}
+
+.contenido-evento h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #4d4d4d;
+}
+
+.contenido-evento p {
+    font-size: 2vh;
+    text-align: justify;
+    color: #666;
+}
+
+.img_time_slider{
+    display: flex;
+    width: 80%;
+    max-width: 600px;
+    vertical-align: bottom;
+}
+
+@media (max-width: 1300px) {
+    #grafica_svg_psicologia {
+        min-width: 800px;
+        min-height: 600px;
+    }
+
+    #cenigaa_timeline {
+        height: 900px;
+    }
+}
+
+@media (max-width: 1000px) {
+    #grafica_svg_psicologia {
+        display: none;
+    }
+
+    #cenigaa_timeline{
+        display: none;
+    }
+
+    .carrusel-linea-tiempo{
+        display: inline;
+    }
+
+    .container_mobile {
+        display: flex;
+    }
+
+    .imagen_explicacion img {
+        width: 50%;
+    
+    }
+
+    .section.azul .imagen_explicacion img{
+        width: 35%;
+    }
+}
+
+@media (max-width: 750px){
+    .imagen_explicacion img {
+        width: 80%;
+    
+    }
+
+    .section.azul .imagen_explicacion img{
+        width: 60%;
+    }
+}
