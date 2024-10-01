@@ -1,3 +1,7 @@
+.site-navbar .container{
+    max-width: 90%;
+}
+
 @media (max-width:750px) {
     .pie-pagina .grupo-1{
         display: flex;
