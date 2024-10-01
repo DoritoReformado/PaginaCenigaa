@@ -667,5 +667,20 @@ ul li {
 
 .container-content.salud{
     margin-top: 2rem;
+}
+
+.container-content.ODS{
+    margin-top: 2rem;
     margin-bottom: 2rem;
+}
+
+.container-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2px;
+}
+
+.img_ods{
+    width: 150px;
 }
