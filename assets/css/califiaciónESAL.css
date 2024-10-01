@@ -4,10 +4,6 @@ body{
 }
 
 .site-navbar {
-  margin-bottom: 0px;
-  z-index: 1999;
-  position: absolute;
-  top: 0rem;
   width: 100%;
 }
 
@@ -702,7 +698,6 @@ body {
 
 .container {
   width: 100%;
-  margin: auto;
 }
 
 .select-wrapper {
@@ -927,8 +922,9 @@ td {
   transform: translateY(-20px);
 }
 .imagen_tarjeta{
-  width: 100%;
+  width: 85%;
   border-radius: 5%;
+  max-height: 190px;
 }
 
 #titulo_escritura{

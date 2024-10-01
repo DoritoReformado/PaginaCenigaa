@@ -19,82 +19,6 @@
     <!--CSS-->
     <link rel="stylesheet" href="../assets/css/experiencia.css">
     <link rel="stylesheet" href="../assets/css/responsive_footer.css">
-
-    <style>
-
-
-
-        .row_tarjetas{
-            display: flex;
-            flex-direction: row;
-            width: 60%;
-        }
-
-        .card {
-            background-color: #ffffff;
-            width: 50%;
-            border-radius: 15px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            margin: 20px;
-            font-family: 'Segoe UI', sans-serif;
-            color: #333;
-        }
-
-        .card h3 {
-            text-align: center;
-            font-size: 24px;
-            margin-bottom: 20px;
-            color: #2c3e50;
-        }
-
-        .card .info label {
-            font-weight: bold;
-            color: #555;
-            display: block;
-        }
-
-        .card .info p {
-            font-size: 16px;
-            margin-top: 5px;
-            padding: 10px;
-            background-color: #f7f7f7;
-            border-radius: 5px;
-            border: 1px solid #eee;
-            color: #333;
-        }
-
-        .card .info p.long {
-            overflow-y: auto;
-        }
-
-        .card .info p:hover {
-            background-color: #eef6fc;
-            transition: 0.3s ease;
-        }
-
-        .card-footer {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .card-footer button {
-            background-color: #3498db;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-
-        .card-footer button:hover {
-            background-color: #2980b9;
-        }
-        #inicio{
-            padding: 30vh 0vh 30vh 0vh;
-        }
-    </style>
 </head>
 
 <body>
@@ -110,87 +34,92 @@
 
     <header class="site-navbar" role="banner">
         <div class="container">
-          <div class="row align-items-center">
-            <div class="col-11 col-xl-2">
-              <h1 class="mb-0 site-logo">
-                <a href="../index.html" class="text-white mb-0">
-                  <img src="../assets/svg/Cenigaa.svg" width="100px" height="100px" alt="">
-                </a>
-              </h1>
-            </div>
-            <div class="col-12 col-md-10 d-none d-xl-block">
-              <nav class="site-navigation position-relative text-right" role="navigation">
-                <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block">
-                  <li><a href="../index.html"><span>Inicio</span></a></li>
-    
-                  <li class="has-children">
-                    <a href="./nosotros.html"><span>Quienes Somos</span></a>
-                    <ul class="dropdown arrow-top">
-                      <li><a href="./nosotros.html#video-presentacion">Descripción</a></li>
-                      <li><a href="./nosotros.html#mision_y_vision">Mision y Vision</a></li>
-                      <li><a href="./nosotros.html#cenigaa_timeline">Historia</a></li>
-                      <li><a href="./nosotros.html#estructura_organizacional">Fundadores del Centro de Investigacion</a></li>
-                      <li><a href="./nosotros.html#servicios_especializados">Estructura Organizacional</a></li>
-                    </ul>
-                  </li>
-    
-                  <li class="has-children">
-                    <a href="#"><span>Investigación</span></a>
-                    <ul class="dropdown">
-                      <!-- Submenú Investigaciones -->
-                      <li class="has-children">
-                        <a href="#">Lineas de Investigación</a>
-                        <ul class="dropdown">
-                          <li><a href="./investigaciones.html#primera_Carta">Ecoeficiencia Productiva & Seguuridad Alimentaria</a></li>
-                          <li><a href="./investigaciones.html#segunda_Carta">Cambio Climatico</a></li>
-                          <li><a href="./investigaciones.html#tercera_Carta">Toxicologia Ambiental</a></li>
-                          <li><a href="./investigaciones.html#cuarta_Carta">Modelacion en Dinamicas de Sistemas GeoAgroAmbientales</a></li>
-                          <li><a href="./investigaciones.html#quinta_Carta">Aseguramiento Energetico</a></li>
-                          <li><a href="./investigaciones.html#sexta_Carta">BioTecnologia</a></li>
-                          <li><a href="./investigaciones.html#septima_Carta">NanoTecnologia</a></li>
-                        </ul>
-                      </li>
-                      <li class="has-children">
-                        <a href="#">Unidades Especializadas</a>
-                        <ul class="dropdown">
-                          <li><a href="./unidades_especializadas.html#G-pro">GproDrone</a></li>
-                          <li><a href="./unidades_especializadas.html#AgroBussiness">AgroBussiness 4.0</a></li>
-                          <li><a href="./unidades_especializadas.html#NRMA">NRMA</a></li>
-                          <li><a href="./unidades_especializadas.html#HBS">HBS</a></li>
-                          <li><a href="./unidades_especializadas.html">DSGAA</a></li>
-                          <li><a href="./unidades_especializadas.html#doublee">DOUBLEE</a></li>
-                          <li><a href="./unidades_especializadas.html#LABGAA">LABGAA</a></li>
-                          <li><a href="./unidades_especializadas.html#INTECC">INTECC</a></li>
-                        </ul>
-                      </li>
-                      <!-- Submenú Investigadores -->
-                      <li class="has-children">
-                        <a href="#">Investigadores</a>
-                        <ul class="dropdown">
-                          <li><a href="./investigadores.html">Investigadores</a></li>
-                          <li><a href="./jovenesInvestigadores.html">Jóvenes Investigadores</a></li>
-                          <li><a href="./pasantes.html">Pasantes</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>
-    
-                  <li><a href="./servicios.html"><span>Nuestros Servicios</span></a></li>
-    
-    
-    
-                  <li><a href="./experiencia_cenigaa.html"><span>Experiencias</span></a></li>
-                </ul>
-              </nav>
-            </div>
-            <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;">
-              <a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a>
-            </div>
-          </div>
-        </div>
-      </header>
-    
+            <div class="row align-items-center">
+                <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo">
+                        <a href="../index.html" class="text-white mb-0">
+                            <img src="../assets/svg/Cenigaa.svg" width="100px" height="100px" alt="">
+                        </a>
+                    </h1>
+                </div>
+                <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+                        <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block">
+                            <li><a href="../index.html"><span>Inicio</span></a></li>
 
+                            <li class="has-children">
+                                <a href="./nosotros.html"><span>Quienes Somos</span></a>
+                                <ul class="dropdown arrow-top">
+                                    <li><a href="./nosotros.html#video-presentacion">Descripción</a></li>
+                                    <li><a href="./nosotros.html#mision_y_vision">Mision y Vision</a></li>
+                                    <li><a href="./nosotros.html#cenigaa_timeline">Historia</a></li>
+                                    <li><a href="./nosotros.html#estructura_organizacional">Fundadores del Centro de
+                                            Investigacion</a></li>
+                                    <li><a href="./nosotros.html#servicios_especializados">Estructura Organizacional</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="has-children">
+                                <a href="#"><span>Investigación</span></a>
+                                <ul class="dropdown">
+                                    <!-- Submenú Investigaciones -->
+                                    <li class="has-children">
+                                        <a href="#">Lineas de Investigación</a>
+                                        <ul class="dropdown">
+                                            <li><a href="./investigaciones.html#primera_Carta">Ecoeficiencia Productiva
+                                                    & Seguuridad Alimentaria</a></li>
+                                            <li><a href="./investigaciones.html#segunda_Carta">Cambio Climatico</a></li>
+                                            <li><a href="./investigaciones.html#tercera_Carta">Toxicologia Ambiental</a>
+                                            </li>
+                                            <li><a href="./investigaciones.html#cuarta_Carta">Modelacion en Dinamicas de
+                                                    Sistemas GeoAgroAmbientales</a></li>
+                                            <li><a href="./investigaciones.html#quinta_Carta">Aseguramiento
+                                                    Energetico</a></li>
+                                            <li><a href="./investigaciones.html#sexta_Carta">BioTecnologia</a></li>
+                                            <li><a href="./investigaciones.html#septima_Carta">NanoTecnologia</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-children">
+                                        <a href="#">Unidades Especializadas</a>
+                                        <ul class="dropdown">
+                                            <li><a href="./unidades_especializadas.html#G-pro">GproDrone</a></li>
+                                            <li><a href="./unidades_especializadas.html#AgroBussiness">AgroBussiness
+                                                    4.0</a></li>
+                                            <li><a href="./unidades_especializadas.html#NRMA">NRMA</a></li>
+                                            <li><a href="./unidades_especializadas.html#HBS">HBS</a></li>
+                                            <li><a href="./unidades_especializadas.html">DSGAA</a></li>
+                                            <li><a href="./unidades_especializadas.html#doublee">DOUBLEE</a></li>
+                                            <li><a href="./unidades_especializadas.html#LABGAA">LABGAA</a></li>
+                                            <li><a href="./unidades_especializadas.html#INTECC">INTECC</a></li>
+                                        </ul>
+                                    </li>
+                                    <!-- Submenú Investigadores -->
+                                    <li class="has-children">
+                                        <a href="#">Investigadores</a>
+                                        <ul class="dropdown">
+                                            <li><a href="./investigadores.html">Investigadores</a></li>
+                                            <li><a href="./jovenesInvestigadores.html">Jóvenes Investigadores</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li><a href="./servicios.html"><span>Nuestros Servicios</span></a></li>
+
+
+
+                            <li><a href="./experiencia_cenigaa.html"><span>Experiencias</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;">
+                    <a href="#" class="site-menu-toggle js-menu-toggle text-white"><span
+                            class="icon-menu h3"></span></a>
+                </div>
+            </div>
+        </div>
+    </header>
 
 
     <section id="inicio">
@@ -219,92 +148,97 @@
         <section class="row_tarjetas">
             <div class="card">
                 <h3>Información del Contrato</h3>
-    
+
                 <div class="info">
                     <label>Tipo de Contratista</label>
-                    <p>Compañía</p>
+                    <p>Individual</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Nombre del Contratante</label>
-                    <p>Juan Pérez</p>
+                    <p>Universidad Surcolombiana</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Valor del Contrato</label>
-                    <p>$500,000</p>
+                    <p>$68'000.000</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Vigencia del Contrato</label>
-                    <p>2024-2025</p>
+                    <p>01/12/2010-31/12/2010</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Objeto del Contrato</label>
-                    <p class="long">Desarrollo de una plataforma web para la gestión de proyectos, seguimiento de tareas, y
-                        análisis de datos de rendimiento.</p>
+                    <p class="long">Brindar capacitación para 20 personas en vigilancia tecnologica, brindar
+                        capacitación a los investigadores locales y productores de passifloras sobre los recursos agua y
+                        suelo, prestar los servicios tecnologicos agroindustriales para realizar un diagnostico
+                        preliminar de la oferta de granadilla en las regiones productoras de Palestina, La argentina y
+                        La Plata</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Recursos</label>
-                    <p>Equipo de desarrollo, servidores, herramientas de software</p>
+                    <p>Públicos</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Aliados</label>
-                    <p class="long">TechCorp, Grupo de Innovación Digital, Marketing Solutions.</p>
+                    <p class="long">Universidad Surcolombiana</p>
                 </div>
-    
+
                 <div class="card-footer">
-                    <button>Ver Detalles</button>
+                    <a href="../assets/docs/Contratos-cenigaa/5.pdf" target="_blank" class="btn-contrato">Ver Contrato</a>                   
                 </div>
             </div>
-    
+
             <div class="card">
                 <h3>Información del Contrato</h3>
-    
+
                 <div class="info">
                     <label>Tipo de Contratista</label>
-                    <p>Compañía</p>
+                    <p>Individual</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Nombre del Contratante</label>
-                    <p>Juan Pérez</p>
+                    <p>Universidad Surcolombiana</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Valor del Contrato</label>
-                    <p>$500,000</p>
+                    <p>$37'000.000</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Vigencia del Contrato</label>
-                    <p>2024-2025</p>
+                    <p>24/12/2010-15/04/2011</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Objeto del Contrato</label>
-                    <p class="long">Desarrollo de una plataforma web para la gestión de proyectos, seguimiento de tareas, y
-                        análisis de datos de rendimiento.</p>
+                    <p class="long">Aunar esfuerzos en el desarrollo de habilidades competencias conjuntas y
+                        competencias basicas para la realización de ejercicios de vigilancia tecnologica en procura de
+                        la creación de la unidad especializada en vigilancia tecnologica de la Universidad
+                        surcolombiana.</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Recursos</label>
-                    <p>Equipo de desarrollo, servidores, herramientas de software</p>
+                    <p>Públicos</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Aliados</label>
-                    <p class="long">TechCorp, Grupo de Innovación Digital, Marketing Solutions.</p>
+                    <p class="long">Universidad Surcolombiana</p>
                 </div>
-    
+
                 <div class="card-footer">
-                    <button>Ver Detalles</button>
+                    <a href="../assets/docs/Contratos-cenigaa/15.pdf" target="_blank" class="btn-contrato">Ver Contrato</a>                 
                 </div>
             </div>
-        </section>    
+        </section>
     </section>
 
     <section id="a1954">
@@ -312,92 +246,97 @@
         <section class="row_tarjetas">
             <div class="card">
                 <h3>Información del Contrato</h3>
-    
+
                 <div class="info">
                     <label>Tipo de Contratista</label>
-                    <p>Compañía</p>
+                    <p>Individual</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Nombre del Contratante</label>
-                    <p>Juan Pérez</p>
+                    <p>Universidad Surcolombiana</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Valor del Contrato</label>
-                    <p>$500,000</p>
+                    <p>$421'000.000</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Vigencia del Contrato</label>
-                    <p>2024-2025</p>
+                    <p>07/03/2011 - 06/09/2011</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Objeto del Contrato</label>
-                    <p class="long">Desarrollo de una plataforma web para la gestión de proyectos, seguimiento de tareas, y
-                        análisis de datos de rendimiento.</p>
+                    <p class="long">CENIGAA apoyara el desarrollo del convenio de colaboracion DHS No 5209910 suscrito
+                        entre la UNIVERSIDAD SURCOLOMBIANA y ECOPETROL S.A., en el área de servicios tecnicos movilidad
+                    </p>
                 </div>
-    
+
                 <div class="info">
                     <label>Recursos</label>
-                    <p>Equipo de desarrollo, servidores, herramientas de software</p>
+                    <p>Públicos</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Aliados</label>
-                    <p class="long">TechCorp, Grupo de Innovación Digital, Marketing Solutions.</p>
+                    <p class="long">Universidad Surcolombiana</p>
                 </div>
-    
+
                 <div class="card-footer">
-                    <button>Ver Detalles</button>
+                    <a href="../assets/docs/Contratos-cenigaa/6.pdf" target="_blank" class="btn-contrato">Ver Contrato</a>
+                    <a href="../assets/docs/Actas-finalizacion/6.pdf" target="_blank"  class="btn-act-liquidacion">Ver Act. Liquidación</a>    
                 </div>
             </div>
-    
+
             <div class="card">
                 <h3>Información del Contrato</h3>
-    
+
                 <div class="info">
                     <label>Tipo de Contratista</label>
-                    <p>Compañía</p>
+                    <p>Individual</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Nombre del Contratante</label>
-                    <p>Juan Pérez</p>
+                    <p>Gobernación del Huila</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Valor del Contrato</label>
-                    <p>$500,000</p>
+                    <p>$70'000.000</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Vigencia del Contrato</label>
-                    <p>2024-2025</p>
+                    <p>15/05/2011 - 16/11/2011</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Objeto del Contrato</label>
-                    <p class="long">Desarrollo de una plataforma web para la gestión de proyectos, seguimiento de tareas, y
-                        análisis de datos de rendimiento.</p>
+                    <p class="long">Realizar transferencia tecnologica y de conocimiento en tecnicas de rehabilitacion
+                        de plantaciones de cacao(Injertacion lateral)y metodologias de catacion de fruto para la
+                        identificacion de la calidad regional, como estrategia para el impulso del sector hacia una
+                        produccion y comercializacion </p>
                 </div>
-    
+
                 <div class="info">
                     <label>Recursos</label>
-                    <p>Equipo de desarrollo, servidores, herramientas de software</p>
+                    <p>Públicos</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Aliados</label>
-                    <p class="long">TechCorp, Grupo de Innovación Digital, Marketing Solutions.</p>
+                    <p class="long">Gobernación del Huila.</p>
                 </div>
-    
+
                 <div class="card-footer">
-                    <button>Ver Detalles</button>
+                    <a href="../assets/docs/Contratos-cenigaa/1.pdf" target="_blank" class="btn-contrato">Ver Contrato</a>
+                    <a href="../assets/docs/Actas-finalizacion/1.pdf" target="_blank"  class="btn-act-liquidacion">Ver Act. Liquidación</a>    
                 </div>
             </div>
-        </section> 
+        </section>
     </section>
 
     <section id="a1962">
@@ -405,182 +344,147 @@
         <section class="row_tarjetas">
             <div class="card">
                 <h3>Información del Contrato</h3>
-    
+
                 <div class="info">
                     <label>Tipo de Contratista</label>
-                    <p>Compañía</p>
+                    <p>Individual</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Nombre del Contratante</label>
-                    <p>Juan Pérez</p>
+                    <p>Universidad Surcolombiana</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Valor del Contrato</label>
-                    <p>$500,000</p>
+                    <p>$180'900.000</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Vigencia del Contrato</label>
-                    <p>2024-2025</p>
+                    <p>13/04/2012 - -12/09/2012</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Objeto del Contrato</label>
-                    <p class="long">Desarrollo de una plataforma web para la gestión de proyectos, seguimiento de tareas, y
-                        análisis de datos de rendimiento.</p>
+                    <p class="long">CENIGAA apoyora a la Universidad en el desarrollo del convenio de Colaboracion No
+                        5211465 suscrito entre LA UNIVERSIDAD SURCOLOMBIANA y ECOPETROL S.A ., en la aplicación de
+                        herramientas tecnologicas de mayor valor en la caracterizacion compleja de aguas de produccion
+                        de la SOP.</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Recursos</label>
-                    <p>Equipo de desarrollo, servidores, herramientas de software</p>
+                    <p>Públicos</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Aliados</label>
-                    <p class="long">TechCorp, Grupo de Innovación Digital, Marketing Solutions.</p>
+                    <p class="long">Públicos</p>
                 </div>
-    
+
                 <div class="card-footer">
-                    <button>Ver Detalles</button>
+                    <a href="../assets/docs/Contratos-cenigaa/3.pdf" target="_blank" class="btn-contrato">Ver Contrato</a>
+                    <a href="../assets/docs/Actas-finalizacion/3.pdf" target="_blank"  class="btn-act-liquidacion">Ver Act. Liquidación</a>    
                 </div>
             </div>
-    
+
             <div class="card">
                 <h3>Información del Contrato</h3>
-    
+
                 <div class="info">
                     <label>Tipo de Contratista</label>
-                    <p>Compañía</p>
+                    <p>Individual</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Nombre del Contratante</label>
-                    <p>Juan Pérez</p>
+                    <p>INCODER</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Valor del Contrato</label>
-                    <p>$500,000</p>
+                    <p>$464'797.080</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Vigencia del Contrato</label>
-                    <p>2024-2025</p>
+                    <p>31/10/2012 - 31/12/2012</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Objeto del Contrato</label>
-                    <p class="long">Desarrollo de una plataforma web para la gestión de proyectos, seguimiento de tareas, y
-                        análisis de datos de rendimiento.</p>
+                    <p class="long">El presente convenio de Asociación tiene por objeto aunar recursos técnicos y
+                        financieros y coordinar acciones entre el instituto colombiano de desarrollo rural incoder y el
+                        centro de investigacion en ciencias y recursos geoagroambientales CENIGAA para realizar un
+                        proyecto piloto de aplicación de la resolución 629 de 2012 que sustenten la solicitud de
+                        sustracción ante el ministerio de Ambiente y desarrollo sostenible para la ocupación productiva
+                        y formalización de la propiedad rural en los municipios de Acevedo, pitalito y Garzon.</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Recursos</label>
-                    <p>Equipo de desarrollo, servidores, herramientas de software</p>
+                    <p>Públicos</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Aliados</label>
-                    <p class="long">TechCorp, Grupo de Innovación Digital, Marketing Solutions.</p>
+                    <p class="long">INCODER</p>
                 </div>
-    
+
                 <div class="card-footer">
-                    <button>Ver Detalles</button>
+                    <a href="../assets/docs/Contratos-cenigaa/8.pdf" target="_blank" class="btn-contrato">Ver Contrato</a>
+                    <a href="../assets/docs/Actas-finalizacion/8.pdf" target="_blank"  class="btn-act-liquidacion">Ver Act. Liquidación</a>    
                 </div>
             </div>
-        </section> 
+        </section>
 
         <section class="row_tarjetas">
             <div class="card">
                 <h3>Información del Contrato</h3>
-    
+
                 <div class="info">
                     <label>Tipo de Contratista</label>
-                    <p>Compañía</p>
+                    <p>Individual</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Nombre del Contratante</label>
-                    <p>Juan Pérez</p>
+                    <p>Universidad Surcolombiana</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Valor del Contrato</label>
-                    <p>$500,000</p>
+                    <p>$708'050.000</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Vigencia del Contrato</label>
-                    <p>2024-2025</p>
+                    <p>02/11/2012 - 01/03/2014</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Objeto del Contrato</label>
-                    <p class="long">Desarrollo de una plataforma web para la gestión de proyectos, seguimiento de tareas, y
-                        análisis de datos de rendimiento.</p>
+                    <p class="long">CENIGAA apoyara a la universidad en el desarrollo del Convenio de colaboración No.
+                        5211532 suscrito entre la universidad Surcolombiana y ECOPETROL SA en el componente de los
+                        servicios de ciencia y tecnología.</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Recursos</label>
-                    <p>Equipo de desarrollo, servidores, herramientas de software</p>
+                    <p>Públicos</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Aliados</label>
-                    <p class="long">TechCorp, Grupo de Innovación Digital, Marketing Solutions.</p>
+                    <p class="long">Universidad Surcolombiana</p>
                 </div>
-    
+
                 <div class="card-footer">
-                    <button>Ver Detalles</button>
+                    <a href="../assets/docs/Contratos-cenigaa/10.pdf" target="_blank" class="btn-contrato">Ver Contrato</a>
                 </div>
             </div>
-    
-            <div class="card">
-                <h3>Información del Contrato</h3>
-    
-                <div class="info">
-                    <label>Tipo de Contratista</label>
-                    <p>Compañía</p>
-                </div>
-    
-                <div class="info">
-                    <label>Nombre del Contratante</label>
-                    <p>Juan Pérez</p>
-                </div>
-    
-                <div class="info">
-                    <label>Valor del Contrato</label>
-                    <p>$500,000</p>
-                </div>
-    
-                <div class="info">
-                    <label>Vigencia del Contrato</label>
-                    <p>2024-2025</p>
-                </div>
-    
-                <div class="info">
-                    <label>Objeto del Contrato</label>
-                    <p class="long">Desarrollo de una plataforma web para la gestión de proyectos, seguimiento de tareas, y
-                        análisis de datos de rendimiento.</p>
-                </div>
-    
-                <div class="info">
-                    <label>Recursos</label>
-                    <p>Equipo de desarrollo, servidores, herramientas de software</p>
-                </div>
-    
-                <div class="info">
-                    <label>Aliados</label>
-                    <p class="long">TechCorp, Grupo de Innovación Digital, Marketing Solutions.</p>
-                </div>
-    
-                <div class="card-footer">
-                    <button>Ver Detalles</button>
-                </div>
-            </div>
-        </section> 
+        </section>
     </section>
 
     <section id="a1970">
@@ -588,182 +492,145 @@
         <section class="row_tarjetas">
             <div class="card">
                 <h3>Información del Contrato</h3>
-    
+
                 <div class="info">
                     <label>Tipo de Contratista</label>
-                    <p>Compañía</p>
+                    <p>Individual</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Nombre del Contratante</label>
-                    <p>Juan Pérez</p>
+                    <p>CINDETS</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Valor del Contrato</label>
-                    <p>$500,000</p>
+                    <p>$492'200.000</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Vigencia del Contrato</label>
-                    <p>2024-2025</p>
+                    <p>03/06/2013 - 01/06/2014</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Objeto del Contrato</label>
-                    <p class="long">Desarrollo de una plataforma web para la gestión de proyectos, seguimiento de tareas, y
-                        análisis de datos de rendimiento.</p>
+                    <p class="long">Este convenio especifico tiene por objeto la construcción de un modelo y elaboración
+                        de estudios par " cumplir los requisitos tecnicos y juridicos para la sustracción de áreas de
+                        reserva forestal declaradas por la ley 2 de 1959, con el fin de establecer en el territorio
+                        nacional parogramas para mejorar recuperar y fortalecer la economia campesina, formalizar la
+                        propiead de la tierra y contribuir a mantener la función".</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Recursos</label>
-                    <p>Equipo de desarrollo, servidores, herramientas de software</p>
+                    <p>Privado</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Aliados</label>
-                    <p class="long">TechCorp, Grupo de Innovación Digital, Marketing Solutions.</p>
+                    <p class="long">CINDETS</p>
                 </div>
-    
+
                 <div class="card-footer">
-                    <button>Ver Detalles</button>
+                    <a href="../assets/docs/Contratos-cenigaa/7.pdf" target="_blank" class="btn-contrato">Ver Contrato</a>
                 </div>
             </div>
-    
+
             <div class="card">
                 <h3>Información del Contrato</h3>
-    
+
                 <div class="info">
                     <label>Tipo de Contratista</label>
-                    <p>Compañía</p>
+                    <p>Individual</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Nombre del Contratante</label>
-                    <p>Juan Pérez</p>
+                    <p>CENIRED</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Valor del Contrato</label>
-                    <p>$500,000</p>
+                    <p>$417'000.000</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Vigencia del Contrato</label>
-                    <p>2024-2025</p>
+                    <p>14/06/2013 - 31/12/2013</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Objeto del Contrato</label>
-                    <p class="long">Desarrollo de una plataforma web para la gestión de proyectos, seguimiento de tareas, y
-                        análisis de datos de rendimiento.</p>
+                    <p class="long">Evaluación de sistemas de riego en el cultivo de cacao bajo el esquema de manejo
+                        eficiente del recurso hídrico para el apoyo de la estrategia de aumento de la producción en el
+                        departamento del Huila</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Recursos</label>
-                    <p>Equipo de desarrollo, servidores, herramientas de software</p>
+                    <p>Privado</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Aliados</label>
-                    <p class="long">TechCorp, Grupo de Innovación Digital, Marketing Solutions.</p>
+                    <p class="long">CENIRED</p>
                 </div>
-    
+
                 <div class="card-footer">
-                    <button>Ver Detalles</button>
+                    <a href="../assets/docs/Contratos-cenigaa/4.pdf" target="_blank" class="btn-contrato">Ver Contrato</a>
+                    <a href="../assets/docs/Actas-finalizacion/4.pdf" target="_blank"  class="btn-act-liquidacion">Ver Act. Liquidación</a>    
                 </div>
             </div>
-        </section> 
+        </section>
 
         <section class="row_tarjetas">
             <div class="card">
                 <h3>Información del Contrato</h3>
-    
+
                 <div class="info">
                     <label>Tipo de Contratista</label>
-                    <p>Compañía</p>
+                    <p>Individual</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Nombre del Contratante</label>
-                    <p>Juan Pérez</p>
+                    <p>STOCKHOLM ENVIRONMENT INSTITUTE</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Valor del Contrato</label>
-                    <p>$500,000</p>
+                    <p>$21.000 USD</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Vigencia del Contrato</label>
-                    <p>2024-2025</p>
+                    <p>18/07/2013 - 17/01/2015</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Objeto del Contrato</label>
-                    <p class="long">Desarrollo de una plataforma web para la gestión de proyectos, seguimiento de tareas, y
-                        análisis de datos de rendimiento.</p>
+                    <p class="long">Realizar conjuntamente proyectos y actividades de investigación, científicas y
+                        academicas y tecnicas. Aunar esfuerzos humano, tecnicos, logisticos y económicos para ejecutar
+                        el proyecto " Water resources planning through climate change capacity building . Rios del
+                        paramo al valle por urbes y campiñas</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Recursos</label>
-                    <p>Equipo de desarrollo, servidores, herramientas de software</p>
+                    <p>Cooperacion Internacional</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Aliados</label>
-                    <p class="long">TechCorp, Grupo de Innovación Digital, Marketing Solutions.</p>
+                    <p class="long">STOCKHOLM ENVIRONMENT INSTITUTE</p>
                 </div>
-    
+
                 <div class="card-footer">
-                    <button>Ver Detalles</button>
+                    <a href="../assets/docs/Contratos-cenigaa/11.pdf" target="_blank" class="btn-contrato">Ver Contrato</a>
                 </div>
             </div>
-    
-            <div class="card">
-                <h3>Información del Contrato</h3>
-    
-                <div class="info">
-                    <label>Tipo de Contratista</label>
-                    <p>Compañía</p>
-                </div>
-    
-                <div class="info">
-                    <label>Nombre del Contratante</label>
-                    <p>Juan Pérez</p>
-                </div>
-    
-                <div class="info">
-                    <label>Valor del Contrato</label>
-                    <p>$500,000</p>
-                </div>
-    
-                <div class="info">
-                    <label>Vigencia del Contrato</label>
-                    <p>2024-2025</p>
-                </div>
-    
-                <div class="info">
-                    <label>Objeto del Contrato</label>
-                    <p class="long">Desarrollo de una plataforma web para la gestión de proyectos, seguimiento de tareas, y
-                        análisis de datos de rendimiento.</p>
-                </div>
-    
-                <div class="info">
-                    <label>Recursos</label>
-                    <p>Equipo de desarrollo, servidores, herramientas de software</p>
-                </div>
-    
-                <div class="info">
-                    <label>Aliados</label>
-                    <p class="long">TechCorp, Grupo de Innovación Digital, Marketing Solutions.</p>
-                </div>
-    
-                <div class="card-footer">
-                    <button>Ver Detalles</button>
-                </div>
-            </div>
-        </section> 
+        </section>
     </section>
 
     <section id="a1978">
@@ -771,92 +638,95 @@
         <section class="row_tarjetas">
             <div class="card">
                 <h3>Información del Contrato</h3>
-    
+
                 <div class="info">
                     <label>Tipo de Contratista</label>
-                    <p>Compañía</p>
+                    <p>Individual</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Nombre del Contratante</label>
-                    <p>Juan Pérez</p>
+                    <p>Gobernación del Huila</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Valor del Contrato</label>
-                    <p>$500,000</p>
+                    <p>$828'784.000</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Vigencia del Contrato</label>
-                    <p>2024-2025</p>
+                    <p>18/03/2014 - 17/03/2015</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Objeto del Contrato</label>
-                    <p class="long">Desarrollo de una plataforma web para la gestión de proyectos, seguimiento de tareas, y
-                        análisis de datos de rendimiento.</p>
+                    <p class="long">Aunar recursos, capacidades y competencias interinstitucionales para la ejecución
+                        del proyecto "Mejoramiento de las capacidades de gestión para la innovación tecnologica del
+                        componente geoagroambiental del Huila. </p>
                 </div>
-    
+
                 <div class="info">
                     <label>Recursos</label>
-                    <p>Equipo de desarrollo, servidores, herramientas de software</p>
+                    <p>Públicos</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Aliados</label>
-                    <p class="long">TechCorp, Grupo de Innovación Digital, Marketing Solutions.</p>
+                    <p class="long">Gobernación del Huila</p>
                 </div>
-    
+
                 <div class="card-footer">
-                    <button>Ver Detalles</button>
+                    <a href="../assets/docs/Contratos-cenigaa/12.pdf" target="_blank" class="btn-contrato">Ver Contrato</a>
+                    <a href="../assets/docs/Actas-finalizacion/12.pdf" target="_blank"  class="btn-act-liquidacion">Ver Act. Liquidación</a>    
                 </div>
             </div>
-    
+
             <div class="card">
                 <h3>Información del Contrato</h3>
-    
+
                 <div class="info">
                     <label>Tipo de Contratista</label>
-                    <p>Compañía</p>
+                    <p>Individual</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Nombre del Contratante</label>
-                    <p>Juan Pérez</p>
+                    <p>ECOPETROL</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Valor del Contrato</label>
-                    <p>$500,000</p>
+                    <p>$491'500.000</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Vigencia del Contrato</label>
-                    <p>2024-2025</p>
+                    <p>05/12/2014 - 04/12/2015</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Objeto del Contrato</label>
-                    <p class="long">Desarrollo de una plataforma web para la gestión de proyectos, seguimiento de tareas, y
-                        análisis de datos de rendimiento.</p>
+                    <p class="long">Anuar esfuerzos para el manejo integral del area de investigacion y educacion
+                        ambiental la tribuna, municipio de Neiva, departamento del Huila</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Recursos</label>
-                    <p>Equipo de desarrollo, servidores, herramientas de software</p>
+                    <p>Públicos</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Aliados</label>
-                    <p class="long">TechCorp, Grupo de Innovación Digital, Marketing Solutions.</p>
+                    <p class="long">ECOPETROL</p>
                 </div>
-    
+
                 <div class="card-footer">
-                    <button>Ver Detalles</button>
+                    <a href="../assets/docs/Contratos-cenigaa/2.pdf" target="_blank" class="btn-contrato">Ver Contrato</a>
+                    <a href="../assets/docs/Actas-finalizacion/2.pdf" target="_blank"  class="btn-act-liquidacion">Ver Act. Liquidación</a>    
                 </div>
             </div>
-        </section> 
+        </section>
     </section>
 
     <section id="a1986">
@@ -864,182 +734,141 @@
         <section class="row_tarjetas">
             <div class="card">
                 <h3>Información del Contrato</h3>
-    
+
                 <div class="info">
                     <label>Tipo de Contratista</label>
-                    <p>Compañía</p>
+                    <p>Individual</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Nombre del Contratante</label>
-                    <p>Juan Pérez</p>
+                    <p>CEPSA COLOMBIA</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Valor del Contrato</label>
-                    <p>$500,000</p>
+                    <p>$157'000.000</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Vigencia del Contrato</label>
-                    <p>2024-2025</p>
+                    <p>07/01/2015 - 31/05/2015</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Objeto del Contrato</label>
-                    <p class="long">Desarrollo de una plataforma web para la gestión de proyectos, seguimiento de tareas, y
-                        análisis de datos de rendimiento.</p>
+                    <p class="long">El alcance de la presente orden de servicios es la presentación de los servicios
+                        Estudio Integral de daño de formación en pozos del activo caracara.</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Recursos</label>
-                    <p>Equipo de desarrollo, servidores, herramientas de software</p>
+                    <p>Privado</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Aliados</label>
-                    <p class="long">TechCorp, Grupo de Innovación Digital, Marketing Solutions.</p>
+                    <p class="long">CEPSA COLOMBIA</p>
                 </div>
-    
+
                 <div class="card-footer">
-                    <button>Ver Detalles</button>
+                    <a href="../assets/docs/Contratos-cenigaa/14.pdf" target="_blank" class="btn-contrato">Ver Contrato</a>  
                 </div>
             </div>
-    
+
             <div class="card">
                 <h3>Información del Contrato</h3>
-    
+
                 <div class="info">
                     <label>Tipo de Contratista</label>
-                    <p>Compañía</p>
+                    <p>Individual</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Nombre del Contratante</label>
-                    <p>Juan Pérez</p>
+                    <p>CEPSA COLOMBIA</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Valor del Contrato</label>
-                    <p>$500,000</p>
+                    <p>$38'000.000</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Vigencia del Contrato</label>
-                    <p>2024-2025</p>
+                    <p>06/05/2015 - 31/07/2017</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Objeto del Contrato</label>
-                    <p class="long">Desarrollo de una plataforma web para la gestión de proyectos, seguimiento de tareas, y
-                        análisis de datos de rendimiento.</p>
+                    <p class="long">El alcance de la presente orden de servicios es por diagnostico en daño en formación
+                        de pozoz Ramiriqui y mayalito.</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Recursos</label>
-                    <p>Equipo de desarrollo, servidores, herramientas de software</p>
+                    <p>Privado</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Aliados</label>
-                    <p class="long">TechCorp, Grupo de Innovación Digital, Marketing Solutions.</p>
+                    <p class="long">CEPSA COLOMBIA</p>
                 </div>
-    
+
                 <div class="card-footer">
-                    <button>Ver Detalles</button>
+                    <a href="../assets/docs/Contratos-cenigaa/13.pdf" target="_blank" class="btn-contrato">Ver Contrato</a>
                 </div>
             </div>
-        </section> 
+        </section>
 
         <section class="row_tarjetas">
             <div class="card">
                 <h3>Información del Contrato</h3>
-    
+
                 <div class="info">
                     <label>Tipo de Contratista</label>
-                    <p>Compañía</p>
+                    <p>Individual</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Nombre del Contratante</label>
-                    <p>Juan Pérez</p>
+                    <p>Gobernación del Huila</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Valor del Contrato</label>
-                    <p>$500,000</p>
+                    <p>$3.814'941.143</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Vigencia del Contrato</label>
-                    <p>2024-2025</p>
+                    <p>03/08/2015 - 02/08/2018</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Objeto del Contrato</label>
-                    <p class="long">Desarrollo de una plataforma web para la gestión de proyectos, seguimiento de tareas, y
-                        análisis de datos de rendimiento.</p>
+                    <p class="long">Aunar recursos, capacidades y competencias interinstitucionales para la ejecución
+                        del proyecto "Análisis de la vulnerabilidad y desarrollo de implementación de medidas
+                        participativas de adaptación al sector agropecuario ante impactos de cambio climatico y de la
+                        vulnerabilidad climatica extrema (CCyCV) en el Departamento del Huila</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Recursos</label>
-                    <p>Equipo de desarrollo, servidores, herramientas de software</p>
+                    <p>Publico</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Aliados</label>
-                    <p class="long">TechCorp, Grupo de Innovación Digital, Marketing Solutions.</p>
+                    <p class="long">Gobernación del Huila</p>
                 </div>
-    
+
                 <div class="card-footer">
-                    <button>Ver Detalles</button>
+                    <a href="../assets/docs/Contratos-cenigaa/9.pdf" target="_blank" class="btn-contrato">Ver Contrato</a>
+                    <a href="../assets/docs/Actas-finalizacion/9.pdf" target="_blank"  class="btn-act-liquidacion">Ver Act. Liquidación</a>    
                 </div>
             </div>
-    
-            <div class="card">
-                <h3>Información del Contrato</h3>
-    
-                <div class="info">
-                    <label>Tipo de Contratista</label>
-                    <p>Compañía</p>
-                </div>
-    
-                <div class="info">
-                    <label>Nombre del Contratante</label>
-                    <p>Juan Pérez</p>
-                </div>
-    
-                <div class="info">
-                    <label>Valor del Contrato</label>
-                    <p>$500,000</p>
-                </div>
-    
-                <div class="info">
-                    <label>Vigencia del Contrato</label>
-                    <p>2024-2025</p>
-                </div>
-    
-                <div class="info">
-                    <label>Objeto del Contrato</label>
-                    <p class="long">Desarrollo de una plataforma web para la gestión de proyectos, seguimiento de tareas, y
-                        análisis de datos de rendimiento.</p>
-                </div>
-    
-                <div class="info">
-                    <label>Recursos</label>
-                    <p>Equipo de desarrollo, servidores, herramientas de software</p>
-                </div>
-    
-                <div class="info">
-                    <label>Aliados</label>
-                    <p class="long">TechCorp, Grupo de Innovación Digital, Marketing Solutions.</p>
-                </div>
-    
-                <div class="card-footer">
-                    <button>Ver Detalles</button>
-                </div>
-            </div>
-        </section> 
+        </section>
     </section>
 
     <section id="a1998">
@@ -1047,92 +876,95 @@
         <section class="row_tarjetas">
             <div class="card">
                 <h3>Información del Contrato</h3>
-    
+
                 <div class="info">
                     <label>Tipo de Contratista</label>
-                    <p>Compañía</p>
+                    <p>Individual</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Nombre del Contratante</label>
-                    <p>Juan Pérez</p>
+                    <p>ECOPETROL</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Valor del Contrato</label>
-                    <p>$500,000</p>
+                    <p>$789'768.768</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Vigencia del Contrato</label>
-                    <p>2024-2025</p>
+                    <p>11/01/2019 - 30/06/2020</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Objeto del Contrato</label>
-                    <p class="long">Desarrollo de una plataforma web para la gestión de proyectos, seguimiento de tareas, y
-                        análisis de datos de rendimiento.</p>
+                    <p class="long">“MANTENIMIENTO Y ADMINISTRACIÓN DE LA ECORESERVA LA TRIBUNA, DEL VIVERO UBICADO EN
+                        EL CAMPO DE PRODUCCIÓN YAGUARÁ Y DIAGNOSTICO DE LAS AREAS DE IMPORTANCIA AMBIENTAL DE LA GDH EN
+                        EL DEPARTAMENTO DEL HUILA DURANTE EL PRIMER SEMESTRE DE LA VIGENCIA 2019 CON UN USO DE OPCIÓN DE
+                        6 MESES MÁS.”</p>
                 </div>
-    
                 <div class="info">
                     <label>Recursos</label>
-                    <p>Equipo de desarrollo, servidores, herramientas de software</p>
+                    <p>Públicos</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Aliados</label>
-                    <p class="long">TechCorp, Grupo de Innovación Digital, Marketing Solutions.</p>
+                    <p class="long">ECOPETROL</p>
                 </div>
-    
+
                 <div class="card-footer">
-                    <button>Ver Detalles</button>
+                    <a href="../assets/docs/Contratos-cenigaa/16.pdf" target="_blank" class="btn-contrato">Ver Contrato</a>
+                    <a href="../assets/docs/Actas-finalizacion/16.pdf" target="_blank"  class="btn-act-liquidacion">Ver Act. Liquidación</a>    
                 </div>
             </div>
-    
+
             <div class="card">
                 <h3>Información del Contrato</h3>
-    
+
                 <div class="info">
                     <label>Tipo de Contratista</label>
-                    <p>Compañía</p>
+                    <p>Individual</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Nombre del Contratante</label>
-                    <p>Juan Pérez</p>
+                    <p>EMPRESAS PUBLICAS DE NEIVA</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Valor del Contrato</label>
-                    <p>$500,000</p>
+                    <p>$524'208.158</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Vigencia del Contrato</label>
-                    <p>2024-2025</p>
+                    <p>25/02/2019 - 24/11/2019</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Objeto del Contrato</label>
-                    <p class="long">Desarrollo de una plataforma web para la gestión de proyectos, seguimiento de tareas, y
-                        análisis de datos de rendimiento.</p>
+                    <p class="long">Actualizar el estudio de impacto ambienta (EIA) y el Plan de Manejo Ambiental (PMA)
+                        para la construccion de la planta de tratamiento de aguas residuales del municipio de Neiva</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Recursos</label>
-                    <p>Equipo de desarrollo, servidores, herramientas de software</p>
+                    <p>Públicos</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Aliados</label>
-                    <p class="long">TechCorp, Grupo de Innovación Digital, Marketing Solutions.</p>
+                    <p class="long">EMPRESAS PUBLICAS DE NEIVA</p>
                 </div>
-    
+
                 <div class="card-footer">
-                    <button>Ver Detalles</button>
+                    <a href="../assets/docs/Contratos-cenigaa/17.pdf" target="_blank" class="btn-contrato">Ver Contrato</a>
+                    <a href="../assets/docs/Actas-finalizacion/17.pdf" target="_blank"  class="btn-act-liquidacion">Ver Act. Liquidación</a>    
                 </div>
             </div>
-        </section> 
+        </section>
     </section>
 
     <section id="a2002">
@@ -1140,92 +972,49 @@
         <section class="row_tarjetas">
             <div class="card">
                 <h3>Información del Contrato</h3>
-    
+
                 <div class="info">
                     <label>Tipo de Contratista</label>
-                    <p>Compañía</p>
+                    <p>Individual</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Nombre del Contratante</label>
-                    <p>Juan Pérez</p>
+                    <p>ECOPETROL</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Valor del Contrato</label>
-                    <p>$500,000</p>
+                    <p>$756'658.839</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Vigencia del Contrato</label>
-                    <p>2024-2025</p>
+                    <p>02/12/2020 - 31/07/2023</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Objeto del Contrato</label>
-                    <p class="long">Desarrollo de una plataforma web para la gestión de proyectos, seguimiento de tareas, y
-                        análisis de datos de rendimiento.</p>
+                    <p class="long">MANTENIMIENTO Y ADMINISTRACIÓN DE LA ECORESERVA LA TRIBUNA, Y DEL VIVERO DEL CAMPO
+                        DE PRODUCCIÓN YAGUARÁ DURANTE 5 MESES CON UN USO DE OPCIÓN DE 1 AÑO MÁS.</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Recursos</label>
-                    <p>Equipo de desarrollo, servidores, herramientas de software</p>
+                    <p>Públicos</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Aliados</label>
-                    <p class="long">TechCorp, Grupo de Innovación Digital, Marketing Solutions.</p>
+                    <p class="long">ECOPETROL</p>
                 </div>
-    
+
                 <div class="card-footer">
-                    <button>Ver Detalles</button>
+                    <a href="../assets/docs/Contratos-cenigaa/18.pdf" target="_blank" class="btn-contrato">Ver Contrato</a>
                 </div>
             </div>
-    
-            <div class="card">
-                <h3>Información del Contrato</h3>
-    
-                <div class="info">
-                    <label>Tipo de Contratista</label>
-                    <p>Compañía</p>
-                </div>
-    
-                <div class="info">
-                    <label>Nombre del Contratante</label>
-                    <p>Juan Pérez</p>
-                </div>
-    
-                <div class="info">
-                    <label>Valor del Contrato</label>
-                    <p>$500,000</p>
-                </div>
-    
-                <div class="info">
-                    <label>Vigencia del Contrato</label>
-                    <p>2024-2025</p>
-                </div>
-    
-                <div class="info">
-                    <label>Objeto del Contrato</label>
-                    <p class="long">Desarrollo de una plataforma web para la gestión de proyectos, seguimiento de tareas, y
-                        análisis de datos de rendimiento.</p>
-                </div>
-    
-                <div class="info">
-                    <label>Recursos</label>
-                    <p>Equipo de desarrollo, servidores, herramientas de software</p>
-                </div>
-    
-                <div class="info">
-                    <label>Aliados</label>
-                    <p class="long">TechCorp, Grupo de Innovación Digital, Marketing Solutions.</p>
-                </div>
-    
-                <div class="card-footer">
-                    <button>Ver Detalles</button>
-                </div>
-            </div>
-        </section> 
+
+        </section>
     </section>
 
     <section id="a2006">
@@ -1233,92 +1022,55 @@
         <section class="row_tarjetas">
             <div class="card">
                 <h3>Información del Contrato</h3>
-    
+
                 <div class="info">
                     <label>Tipo de Contratista</label>
-                    <p>Compañía</p>
+                    <p>Individual</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Nombre del Contratante</label>
-                    <p>Juan Pérez</p>
+                    <p>AGROSAVIA</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Valor del Contrato</label>
-                    <p>$500,000</p>
+                    <p>$252'658.203</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Vigencia del Contrato</label>
-                    <p>2024-2025</p>
+                    <p>09/08/2021 - 28/02/2023</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Objeto del Contrato</label>
-                    <p class="long">Desarrollo de una plataforma web para la gestión de proyectos, seguimiento de tareas, y
-                        análisis de datos de rendimiento.</p>
+                    <p class="long">El presente Convenio entre AGROSAVIA y CENIGAA para el desarrollo conjunto de las
+                        actividades 9, 10, 11, 12 y 13, correspondientes al Objetivo Específico Nro. 3 “Estudiar la
+                        dinámica poblacional D. maidis vector de Mollicutes agente causal del achaparramiento arbustivo
+                        con relación a los factores agroclimáticos”, perteneciente al PROYECTO “Estudio del
+                        achaparramiento arbustivo en maíz como sistema productivo de importancia alimentaria enmarcado
+                        dentro de la emergencia económica, social y ecológica causada por el COVID-19 para el
+                        departamento del Huila” con código BPIN 2020000100719”, financiado por el Sistema General de
+                        Regalías.</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Recursos</label>
-                    <p>Equipo de desarrollo, servidores, herramientas de software</p>
+                    <p>Públicos</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Aliados</label>
-                    <p class="long">TechCorp, Grupo de Innovación Digital, Marketing Solutions.</p>
+                    <p class="long">AGROSAVIA</p>
                 </div>
-    
+
                 <div class="card-footer">
-                    <button>Ver Detalles</button>
+                    <a href="../assets/docs/Contratos-cenigaa/20.pdf" target="_blank" class="btn-contrato">Ver Contrato</a>
+                    <a href="../assets/docs/Actas-finalizacion/20.pdf" target="_blank"  class="btn-act-liquidacion">Ver Act. Liquidación</a>    
                 </div>
             </div>
-    
-            <div class="card">
-                <h3>Información del Contrato</h3>
-    
-                <div class="info">
-                    <label>Tipo de Contratista</label>
-                    <p>Compañía</p>
-                </div>
-    
-                <div class="info">
-                    <label>Nombre del Contratante</label>
-                    <p>Juan Pérez</p>
-                </div>
-    
-                <div class="info">
-                    <label>Valor del Contrato</label>
-                    <p>$500,000</p>
-                </div>
-    
-                <div class="info">
-                    <label>Vigencia del Contrato</label>
-                    <p>2024-2025</p>
-                </div>
-    
-                <div class="info">
-                    <label>Objeto del Contrato</label>
-                    <p class="long">Desarrollo de una plataforma web para la gestión de proyectos, seguimiento de tareas, y
-                        análisis de datos de rendimiento.</p>
-                </div>
-    
-                <div class="info">
-                    <label>Recursos</label>
-                    <p>Equipo de desarrollo, servidores, herramientas de software</p>
-                </div>
-    
-                <div class="info">
-                    <label>Aliados</label>
-                    <p class="long">TechCorp, Grupo de Innovación Digital, Marketing Solutions.</p>
-                </div>
-    
-                <div class="card-footer">
-                    <button>Ver Detalles</button>
-                </div>
-            </div>
-        </section> 
+        </section>
     </section>
 
     <section id="a2010">
@@ -1326,92 +1078,102 @@
         <section class="row_tarjetas">
             <div class="card">
                 <h3>Información del Contrato</h3>
-    
+
                 <div class="info">
                     <label>Tipo de Contratista</label>
-                    <p>Compañía</p>
+                    <p>Individual</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Nombre del Contratante</label>
-                    <p>Juan Pérez</p>
+                    <p>Gobernación del Huila</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Valor del Contrato</label>
-                    <p>$500,000</p>
+                    <p>$3.804'833.098</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Vigencia del Contrato</label>
-                    <p>2024-2025</p>
+                    <p>19/07/2022 - 18/01/2025</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Objeto del Contrato</label>
-                    <p class="long">Desarrollo de una plataforma web para la gestión de proyectos, seguimiento de tareas, y
-                        análisis de datos de rendimiento.</p>
+                    <p class="long">AUNAR ESFUERZOS TÉCNICOS Y FINANCIEROS PARA LA
+                        EJECUCIÓN DEL PROYECTO DE CIENCIA, TECNOLOGÍA E
+                        INNOVACIÓN DENOMINADO "INVESTIGACIÓN DE LAS VENTAJAS
+                        COMPARATIVAS DEL SUBSECTOR DEL CACAO EN EL
+                        DEPARTAMENTO DEL HUILA" CON EL CÓDIGO BPIN
+                        2018000100122, DE CONFORMIDAD CON LOS TÉRMINOS EN LOS
+                        QUE FUE APROBADO POR EL OCAD DEL FONDO DE CIENCIA,
+                        TECNOLOGÍA E INNOVACIÓN — FCTeI EN EL ACTA 057 DEL 29 DE
+                        MARZO DE 2019 Y APROBADO MEDIANTE ACUERDO NO.074 DEL
+                        10 DE ABRIL DE 2019.</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Recursos</label>
-                    <p>Equipo de desarrollo, servidores, herramientas de software</p>
+                    <p>Públicos</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Aliados</label>
-                    <p class="long">TechCorp, Grupo de Innovación Digital, Marketing Solutions.</p>
+                    <p class="long">Gobernación del Huila || Universidad Surcolombiana || CORHUILA || Servicio Nacional
+                        de Aprendizaje.</p>
                 </div>
-    
+
                 <div class="card-footer">
-                    <button>Ver Detalles</button>
+                    <a href="../assets/docs/Contratos-cenigaa/19.pdf" target="_blank" class="btn-contrato">Ver Contrato</a>
                 </div>
             </div>
-    
+
             <div class="card">
                 <h3>Información del Contrato</h3>
-    
+
                 <div class="info">
                     <label>Tipo de Contratista</label>
-                    <p>Compañía</p>
+                    <p>Individual</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Nombre del Contratante</label>
-                    <p>Juan Pérez</p>
+                    <p>GEOPARK COLOMBIA S.A.S.</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Valor del Contrato</label>
-                    <p>$500,000</p>
+                    <p>$74'448.000</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Vigencia del Contrato</label>
-                    <p>2024-2025</p>
+                    <p>01/10/2022 - 30/11/2022</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Objeto del Contrato</label>
-                    <p class="long">Desarrollo de una plataforma web para la gestión de proyectos, seguimiento de tareas, y
-                        análisis de datos de rendimiento.</p>
+                    <p class="long">SERVICIO PARA EL DESARROLLO UN PROYECTO DE ESTIMACIÓN DE LA PRESIÓN DE INICIO DE
+                        PRECIPITACIÓN DE ASFÁLTENOS (AOP) PARA ALGUNOS CRUDOS DE LOS CAMPOS DE LLANOS-34 A TRAVÉS DE UN
+                        MODELO DE INTELIGENCIA ARTIFICIAL</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Recursos</label>
-                    <p>Equipo de desarrollo, servidores, herramientas de software</p>
+                    <p>Privado</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Aliados</label>
-                    <p class="long">TechCorp, Grupo de Innovación Digital, Marketing Solutions.</p>
+                    <p class="long">GEOPARK COLOMBIA S.A.S.</p>
                 </div>
-    
+
                 <div class="card-footer">
-                    <button>Ver Detalles</button>
+                    <a href="../assets/docs/Contratos-cenigaa/21.pdf" target="_blank" class="btn-contrato">Ver Contrato</a>
                 </div>
             </div>
-        </section> 
+        </section>
     </section>
 
     <section id="a2014">
@@ -1419,92 +1181,49 @@
         <section class="row_tarjetas">
             <div class="card">
                 <h3>Información del Contrato</h3>
-    
+
                 <div class="info">
                     <label>Tipo de Contratista</label>
-                    <p>Compañía</p>
+                    <p>Individual</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Nombre del Contratante</label>
-                    <p>Juan Pérez</p>
+                    <p>ECOPETROL</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Valor del Contrato</label>
-                    <p>$500,000</p>
+                    <p>$599'687.618</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Vigencia del Contrato</label>
-                    <p>2024-2025</p>
+                    <p>28/08/2023 - 28/06/2024</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Objeto del Contrato</label>
-                    <p class="long">Desarrollo de una plataforma web para la gestión de proyectos, seguimiento de tareas, y
-                        análisis de datos de rendimiento.</p>
+                    <p class="long">ADMINISTRACIÓN Y LABORES DE MANTENIMIENTO Y ADECUACIÓN DE LA ECORESERVA LA TRIBUNA,
+                        BANCO DE GERMOPLASMA Y VIVERO DEL CAMPO DE PRODUCCIÓN YAGUARÁ, CON UN USO DE OPCION. TIER 3 –
+                        TECNICA BASICA</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Recursos</label>
-                    <p>Equipo de desarrollo, servidores, herramientas de software</p>
+                    <p>Publico</p>
                 </div>
-    
+
                 <div class="info">
                     <label>Aliados</label>
-                    <p class="long">TechCorp, Grupo de Innovación Digital, Marketing Solutions.</p>
+                    <p class="long">ECOPETROL</p>
                 </div>
-    
+
                 <div class="card-footer">
-                    <button>Ver Detalles</button>
+                    <a href="../assets/docs/Contratos-cenigaa/22.pdf" target="_blank" class="btn-contrato">Ver Contrato</a>
                 </div>
             </div>
-    
-            <div class="card">
-                <h3>Información del Contrato</h3>
-    
-                <div class="info">
-                    <label>Tipo de Contratista</label>
-                    <p>Compañía</p>
-                </div>
-    
-                <div class="info">
-                    <label>Nombre del Contratante</label>
-                    <p>Juan Pérez</p>
-                </div>
-    
-                <div class="info">
-                    <label>Valor del Contrato</label>
-                    <p>$500,000</p>
-                </div>
-    
-                <div class="info">
-                    <label>Vigencia del Contrato</label>
-                    <p>2024-2025</p>
-                </div>
-    
-                <div class="info">
-                    <label>Objeto del Contrato</label>
-                    <p class="long">Desarrollo de una plataforma web para la gestión de proyectos, seguimiento de tareas, y
-                        análisis de datos de rendimiento.</p>
-                </div>
-    
-                <div class="info">
-                    <label>Recursos</label>
-                    <p>Equipo de desarrollo, servidores, herramientas de software</p>
-                </div>
-    
-                <div class="info">
-                    <label>Aliados</label>
-                    <p class="long">TechCorp, Grupo de Innovación Digital, Marketing Solutions.</p>
-                </div>
-    
-                <div class="card-footer">
-                    <button>Ver Detalles</button>
-                </div>
-            </div>
-        </section> 
+        </section>
     </section>
 
 

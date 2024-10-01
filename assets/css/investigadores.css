@@ -424,7 +424,8 @@
 }
 
 .team .member .teampic {
-  overflow: hidden;
+  display: flex;
+  justify-content: center;
   width: 180px;
   border-radius: 50%;
 }
@@ -669,4 +670,27 @@ section {
 .fondo-cenigaa {
   background-image: linear-gradient(to right, rgb(10, 10, 11), rgb(50, 49, 61), rgb(10, 10, 11)), url("../img/cenigaa_blanconegro.jfif");
   width: 100%;
+}
+
+.col-lg-6.mt-4{
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.container{
+  margin: 0 auto; /* Centra elementos de bloque */
+  display: block;
+}
+
+.row{
+  max-width: 1134px;
+}
+
+.img-fluid{
+  max-width: 125px;
+}
+
+.team{
+  margin-bottom: 20px;
 }

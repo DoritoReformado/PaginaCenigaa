@@ -861,6 +861,35 @@ body {
     padding: 30vh 0vh 30vh 0vh;
 }
 
+/* Estilo general para los botones tipo "a" */
+.btn-contrato, .btn-act-liquidacion {
+    display: inline-block;
+    padding: 2% 5%; /* Padding en porcentaje */
+    font-size: 100%; /* Tamaño de fuente en porcentaje */
+    color: white;
+    background-color: #3a99d9;
+    border-radius: 5%;
+    text-align: center;
+    text-decoration: none;
+    margin-right: 2%; /* Espaciado entre los botones en porcentaje */
+    transition: background-color 0.3s ease;
+}
+
+/* Hover para ambos botones */
+.btn-contrato:hover, .btn-act-liquidacion:hover {
+    background-color: #2a7ab7;
+}
+
+/* Estilos únicos para cada botón */
+.btn-contrato {
+    background-color: #3a99d9;
+}
+
+.btn-act-liquidacion {
+    background-color: #3a99d9;
+}
+
+
 @media screen and (max-width: 1350px){
     .row_tarjetas{
         width: 90%;
