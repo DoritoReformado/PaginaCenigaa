@@ -415,6 +415,10 @@
 
 
 /*<!=======CARDS JOVENES INVESTIGADORES=======>*/
+.team{
+  margin-bottom: 2rem;
+}
+
 .team .member {
   position: relative;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
