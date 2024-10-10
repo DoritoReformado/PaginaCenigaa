@@ -567,13 +567,13 @@ body {
     justify-content: center;
     align-items: flex-start;
     width: 100%; /* Ocupa todo el ancho */
-    margin-top: 7rem;
     box-sizing: border-box;
     
 }
 
 /* Carta */
 .card {
+    margin-top: 7rem;
     display: grid;
     grid-template-columns: 2fr 3fr;
     grid-template-rows: auto auto auto;
