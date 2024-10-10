@@ -692,3 +692,29 @@ ul li {
     flex-direction: column;
     align-items: center;
 }
+
+
+.lista-archivos {
+    list-style-type: none;
+    padding: 0;
+    width: 80%;
+}
+
+.archivo-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.icono-archivo {
+    margin-right: 10px;
+}
+
+.nombre-archivo {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.nombre-archivo:hover {
+    text-decoration: underline;
+}
