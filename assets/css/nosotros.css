@@ -782,6 +782,33 @@ section {
   text-decoration: none;
 }
 
+.web-organizacional{
+  margin-top: 7rem;
+}
+
+.mobile-organizacional{
+  display: none;
+}
+
+.container.historia{
+  margin-top: 7rem;
+}
+
+.section-title.fundadores{
+  margin-top: 7rem;
+}
+
+@media screen and (max-width:760px) {
+    .web-organizacional{
+      display: none;
+    }
+    .mobile-organizacional{
+      display: flex;
+      margin-top: 6rem;
+      flex-direction: column;
+    }
+}
+
 @media screen and (max-width:800px) {
   .pie-pagina .grupo-1 {
     width: 90%;
