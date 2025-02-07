@@ -1,0 +1,30 @@
+{%extends 'base.html'%}
+{%block title%}Objetivos de desarrollo sostenible{% endblock %}
+
+{% block css_input %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/black_nav.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/complementos.css') }}">
+{% endblock %}
+
+{%block content%}
+<div class="container-content ODS" id="ODS">
+    <h2>ODS a los que apunta CENIGAA</h2>
+    <div class="container-flex">
+        <img class="img_ods" src="{{ url_for('static', filename='img/ODS/S-WEB-Goal-01.png') }}" alt="ODS 1">
+        <img class="img_ods" src="{{ url_for('static', filename='img/ODS/S-WEB-Goal-02.png') }}" alt="ODS 2">
+        <img class="img_ods" src="{{ url_for('static', filename='img/ODS/S-WEB-Goal-03.png') }}" alt="ODS 3">
+        <img class="img_ods" src="{{ url_for('static', filename='img/ODS/S-WEB-Goal-04.png') }}" alt="ODS 4">
+        <img class="img_ods" src="{{ url_for('static', filename='img/ODS/S-WEB-Goal-05.png') }}" alt="ODS 5">
+        <img class="img_ods" src="{{ url_for('static', filename='img/ODS/S-WEB-Goal-06.png') }}" alt="ODS 6">
+        <img class="img_ods" src="{{ url_for('static', filename='img/ODS/S-WEB-Goal-07.png') }}" alt="ODS 7">
+        <img class="img_ods" src="{{ url_for('static', filename='img/ODS/S-WEB-Goal-08.png') }}" alt="ODS 8">
+        <img class="img_ods" src="{{ url_for('static', filename='img/ODS/S-WEB-Goal-09.png') }}" alt="ODS 9">
+        <img class="img_ods" src="{{ url_for('static', filename='img/ODS/S-WEB-Goal-10.png') }}" alt="ODS 10">
+        <img class="img_ods" src="{{ url_for('static', filename='img/ODS/S-WEB-Goal-11.png') }}" alt="ODS 11">
+        <img class="img_ods" src="{{ url_for('static', filename='img/ODS/S-WEB-Goal-12.png') }}" alt="ODS 12">
+        <img class="img_ods" src="{{ url_for('static', filename='img/ODS/S-WEB-Goal-13.png') }}" alt="ODS 13">
+        <img class="img_ods" src="{{ url_for('static', filename='img/ODS/S-WEB-Goal-16.png') }}" alt="ODS 16">
+        <img class="img_ods" src="{{ url_for('static', filename='img/ODS/S-WEB-Goal-17.png') }}" alt="ODS 17">
+    </div>
+</div>
+{% endblock %}

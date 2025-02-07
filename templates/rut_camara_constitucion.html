@@ -1,0 +1,44 @@
+{%extends 'base.html'%}
+{%block title%}Revisoría Fiscal y Responsabilidad Social - CENIGAA{% endblock %}
+
+{% block css_input %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/black_nav.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/complementos.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/califiaciónESAL.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="container" id="rut_escritura_camaracomercio">
+    <div class="section-title">
+        <h2 id="titulo_escritura">Escritura Pública - Rut - Cámara de Comercio</h2>
+    </div>
+    <div class="contenedor-tarjetas-contenedor">
+
+        <div class="tarjetas-contenedor">
+            <!-- Tarjeta 1 -->
+            <div class="tarjeta-custom">
+                <img class="imagen_tarjeta" src="{{ url_for('static', filename='img/ESCRITURA_P.png') }}">
+                <h2>1</h2>
+                <p>Escritura Pública.</p>
+                <a class="button" href="{{ url_for('static', filename='docs/Escritura-Rut-Camara/Acta de constitución de CENIGAA.pdf') }}" target="_blank">Ir al archivo</a>
+            </div>
+
+            <!-- Tarjeta 2 -->
+            <div class="tarjeta-custom tarjeta-central">
+                <img class="imagen_tarjeta" src="{{ url_for('static', filename='img/RUT.png') }}">
+                <h2>2</h2>
+                <p>Registro Único Tributario</p>
+                <a class="button" href="{{ url_for('static', filename='docs/Escritura-Rut-Camara/RUT CENIGAA 2024-1.pdf') }}" target="_blank">Ir al archivo</a>
+            </div>
+
+            <!-- Tarjeta 3 -->
+            <div class="tarjeta-custom">
+                <img class="imagen_tarjeta" src="{{ url_for('static', filename='img/camara_Comercio_icon.png') }}">
+                <h2>3</h2>
+                <p>Cámara de Comercio</p>
+                <a class="button" href="{{ url_for('static', filename='docs/Escritura-Rut-Camara/CAMARA DE COMERCIO CENIGAA 12-08-2024.pdf') }}" target="_blank">Ir al archivo</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,46 @@
+{%extends 'base.html'%}
+{%block title%}Aseguramiento energetico - Cenigaa{% endblock %}
+
+{% block css_input %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/black_nav.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/investigaciones.css') }}">
+{% endblock %}
+
+{%block content%}
+<div id="quinta_Carta">
+  <div class="card">
+      <div class="titulo">
+          Quinta Línea Investigativa: Aseguramiento energético
+      </div>
+      <div class="factores">
+          <p class="subtitulo">Factores Críticos de la cadena</p>
+          <p>Desarrollo de modelos de producción minero-energéticos sustentables ambiental y económicamente.</p>
+      </div>
+      <div class="importancia">
+          <p class="subtitulo">Importancia y relevancia para los sectores</p>
+          <p>Las estrategias buscan desarrollar técnicas energéticas que aseguren accesibilidad, disponibilidad y
+              sostenibilidad, garantizando un suministro compatible con el medio ambiente.</p>
+      </div>
+      <div class="objetivos">
+          <p class="subtitulo">Objetivos de desarrollo sostenible a los que apunta</p>
+          <div class="row_ods">
+              <!-- Rutas corregidas para las imágenes ODS -->
+              <img class="ods_image" src="{{ url_for('static', filename='img/ODS/S-WEB-Goal-07.png') }}" alt="ODS 07">
+              <img class="ods_image" src="{{ url_for('static', filename='img/ODS/S-WEB-Goal-09.png') }}" alt="ODS 09">
+              <img class="ods_image" src="{{ url_for('static', filename='img/ODS/S-WEB-Goal-12.png') }}" alt="ODS 12">
+              <img class="ods_image" src="{{ url_for('static', filename='img/ODS/S-WEB-Goal-13.png') }}" alt="ODS 13">
+              <img class="ods_image" src="{{ url_for('static', filename='img/ODS/S-WEB-Goal-15.png') }}" alt="ODS 15">
+          </div>
+      </div>
+      <div class="lineamientos">
+          <p class="subtitulo">Lineamientos del PND a los que apunta</p>
+          <p>Ordenamiento del territorio alrededor del agua y justicia ambiental. Catalizadores: 1 y 3.</p>
+          <p>Seguridad humana y justicia social. Catalizadores: B.</p>
+          <p>Derecho humano a la alimentación. Catalizadores: 3 y 5.</p>
+          <p>Internacionalización, transformación productiva para la vida y acción climática. Catalizadores: A, B y C.</p>
+          <p>Convergencia Regional. Catalizadores: 4.</p>
+      </div>
+  </div>
+</div>
+
+{%endblock%}

@@ -1,0 +1,42 @@
+{%extends 'base.html'%}
+{%block title%}Revisoría Fiscal y Responsabilidad Social - CENIGAA{% endblock %}
+
+{% block css_input %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/black_nav.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/complementos.css') }}">
+{% endblock %}
+
+{% block content %}
+
+<div class="container-content salud" id="salud_mental">
+    <h1>Salud Mental en CENIGAA</h1>
+
+    <div class="highlight">
+        <p>En CENIGAA, consideramos que la salud mental es un componente fundamental para el bienestar y el
+            desarrollo de nuestros colaboradores y las comunidades con las que interactuamos.</p>
+    </div>
+
+    <h2>¿Por qué es importante la Salud Mental?</h2>
+    <p>El bienestar emocional y psicológico de las personas es clave para su desarrollo profesional y personal. En
+        CENIGAA, promovemos un entorno laboral y social donde se fomente el cuidado de la salud mental, buscando que
+        todos los miembros de nuestra comunidad puedan alcanzar su máximo potencial.</p>
+
+    <h2>Iniciativas de Salud Mental en CENIGAA</h2>
+    <p>Algunas de las iniciativas que hemos implementado en torno a la salud mental incluyen:</p>
+    <ul>
+        <li><strong>Charlas y talleres sobre bienestar emocional:</strong> Ofrecemos espacios educativos sobre
+            manejo del estrés, ansiedad y otros temas relacionados con la salud mental.</li>
+        <li><strong>Programas de apoyo psicológico:</strong> Facilitamos el acceso a profesionales especializados
+            que brindan apoyo emocional a nuestros colaboradores.</li>
+        <li><strong>Fomento de un ambiente de trabajo saludable:</strong> Promovemos políticas internas que
+            contribuyen a un entorno laboral equilibrado, donde se respetan los tiempos de descanso y se valora la
+            empatía.</li>
+    </ul>
+
+    <h2>Nuestro Compromiso</h2>
+    <p>En CENIGAA, estamos comprometidos con la creación de un entorno donde la salud mental sea prioritaria,
+        apoyando a nuestros colaboradores y a las comunidades para que puedan desarrollarse en un ambiente sano y
+        equilibrado.</p>
+</div>
+
+{% endblock %}

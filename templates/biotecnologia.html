@@ -1,0 +1,50 @@
+{%extends 'base.html'%}
+{%block title%}Biotecnología - Cenigaa{% endblock %}
+
+{% block css_input %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/black_nav.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/investigaciones.css') }}">
+{% endblock %}
+
+{%block content%}
+<div id="sexta_Carta">
+  <div class="card">
+      <div class="titulo">
+          Sexta Línea Investigativa: Biotecnología
+      </div>
+      <div class="factores">
+          <p class="subtitulo">Factores Críticos de la cadena</p>
+          <p>
+              <b>Innovación tecnológica:</b> Uso de organismos modificados para aumentar la eficiencia en la producción
+              agroindustrial.<br>
+              <b>Mejora genética:</b> Aplicación de técnicas biotecnológicas para fortalecer cultivos y mejorar la
+              resistencia a enfermedades.<br>
+              <b>Bioseguridad:</b> Evaluación de riesgos y cumplimiento de normas internacionales.<br>
+          </p>
+      </div>
+      <div class="importancia">
+          <p class="subtitulo">Importancia y relevancia para los sectores</p>
+          <p>La biotecnología es clave para el avance en áreas como la agricultura sostenible, la salud pública y la
+              conservación del medio ambiente. Permite aumentar la productividad de manera ecoeficiente y resolver problemas
+              críticos como la escasez de recursos y el impacto ambiental.</p>
+      </div>
+      <div class="objetivos">
+          <p class="subtitulo">Objetivos de desarrollo sostenible a los que apunta</p>
+          <div class="row_ods">
+              <!-- Rutas corregidas para las imágenes ODS -->
+              <img class="ods_image" src="{{ url_for('static', filename='img/ODS/S-WEB-Goal-02.png') }}" alt="ODS 02">
+              <img class="ods_image" src="{{ url_for('static', filename='img/ODS/S-WEB-Goal-03.png') }}" alt="ODS 03">
+              <img class="ods_image" src="{{ url_for('static', filename='img/ODS/S-WEB-Goal-09.png') }}" alt="ODS 09">
+              <img class="ods_image" src="{{ url_for('static', filename='img/ODS/S-WEB-Goal-13.png') }}" alt="ODS 13">
+          </div>
+      </div>
+      <div class="lineamientos">
+          <p class="subtitulo">Lineamientos del PND a los que apunta</p>
+          <p>Internacionalización y transformación productiva para la vida y acción climática. Catalizadores: A, B y C.
+          </p>
+          <p>Seguridad humana y justicia social. Catalizadores: B y C.</p>
+          <p>Convergencia Regional. Catalizadores: 4.</p>
+      </div>
+  </div>
+</div>
+{%endblock%}

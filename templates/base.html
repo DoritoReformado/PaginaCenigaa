@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Iconos-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/investigadores.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='fonts/icomoon/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/logo-cenigaa.ico') }}">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive_footer.css') }}">
+    {% block css_input %} {%endblock%}
+    <title>{% block title %}{% endblock %}</title>
+</head>
+
+<body>
+    <!-- Menú para móviles -->
+    <div class="site-mobile-menu">
+        <div class="site-mobile-menu-header">
+            <div class="site-mobile-menu-close mt-3">
+                <span class="icon-close2 js-menu-toggle"></span>
+            </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+    </div>
+
+    <!-- Menú Barra Superior -->
+    <header class="site-navbar" role="banner">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo">
+                        <a href="{{ url_for('index') }}" class="text-white mb-0">
+                            <!-- Cambié la ruta de la imagen -->
+                            <img src="{{ url_for('static', filename='svg/Cenigaa.svg') }}" width="100px" height="100px" alt="">
+                        </a>
+                    </h1>
+                </div>
+                <div class="col-12 col-md-10 d-none d-xl-block nav_bar_padding_rigth_0">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+                        <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block">
+                            <li><a href="{{ url_for('index') }}"><span>Inicio</span></a></li>
+
+                            <li class="has-children">
+                                <a href="#"><span>Quienes Somos</span></a>
+                                <ul class="dropdown arrow-top">
+                                    <li><a href="{{ url_for('nosotros') }}#video-presentacion">Descripción</a></li>
+                                    <li><a href="{{ url_for('nosotros') }}#mision_y_vision">Misión y Visión</a></li>
+                                    <li><a href="{{ url_for('historia') }}">Historia</a></li>
+                                    <li><a href="{{ url_for('fundadores') }}">Fundadores del Centro de Investigación</a></li>
+                                    <li><a href="{{ url_for('estructura_organizacional') }}">Estructura Organizacional</a></li>
+                                    <li><a href="{{ url_for('rut_camara_constitucion') }}">Registros y Certificaciones Empresariales</a></li>
+                                    <li><a href="{{ url_for('ODS') }}">ODS Cenigaa</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="has-children">
+                                <a href="#"><span>Ética Corporativa</span></a>
+                                <ul class="dropdown arrow-top">
+                                    <li><a href="{{ url_for('responsabilidad_fiscal') }}">Revisoría Fiscal</a></li>
+                                    <li><a href="{{ url_for('responsabilidad_social') }}">Responsabilidad Social</a></li>
+                                    <li><a href="{{ url_for('salud_mental') }}">Salud Mental</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="has-children">
+                                <a href="#"><span>Investigación</span></a>
+                                <ul class="dropdown">
+                                    <!-- Submenú Investigaciones -->
+                                    <li class="has-children">
+                                        <a href="#">Líneas de Investigación</a>
+                                        <ul class="dropdown">
+                                            <li><a href="{{ url_for('ecoeficiencia_productiva_seguridad_alimentaria') }}">Ecoeficiencia Productiva & Seguridad Alimentaria</a></li>
+                                            <li><a href="{{ url_for('cambio_climatico') }}">Cambio Climático</a></li>
+                                            <li><a href="{{ url_for('toxicologia_ambiental') }}">Toxicología Ambiental</a></li>
+                                            <li><a href="{{ url_for('MSGAA') }}">Modelación en Dinámicas de Sistemas GeoAgroAmbientales</a></li>
+                                            <li><a href="{{ url_for('aseguramiento_energetico') }}">Aseguramiento Energético</a></li>
+                                            <li><a href="{{ url_for('biotecnologia') }}">Biotecnología</a></li>
+                                            <li><a href="{{ url_for('nanotecnologia') }}">Nanotecnología</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-children">
+                                        <a href="#">Unidades Especializadas</a>
+                                        <ul class="dropdown">
+                                            <li><a href="{{ url_for('unidades_especializadas') }}#G-pro">GproDrone</a></li>
+                                            <li><a href="{{ url_for('unidades_especializadas') }}#AgroBussiness">AgroBussiness 4.0</a></li>
+                                            <li><a href="{{ url_for('unidades_especializadas') }}#NRMA">NRMA</a></li>
+                                            <li><a href="{{ url_for('unidades_especializadas') }}#HBS">HBS</a></li>
+                                            <li><a href="{{ url_for('unidades_especializadas') }}">DSGAA</a></li>
+                                            <li><a href="{{ url_for('unidades_especializadas') }}#doublee">DOUBLEE</a></li>
+                                            <li><a href="{{ url_for('unidades_especializadas') }}#LABGAA">LABGAA</a></li>
+                                            <li><a href="{{ url_for('unidades_especializadas') }}#INTECC">INTECC</a></li>
+                                        </ul>
+                                    </li>
+                                    <!-- Submenú Investigadores -->
+                                    <li class="has-children">
+                                        <a href="#">Investigadores</a>
+                                        <ul class="dropdown">
+                                            <li><a href="{{ url_for('investigadores') }}">Investigadores</a></li>
+                                            <li><a href="{{ url_for('administrativos') }}">Administrativos</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li><a href="{{ url_for('servicios') }}"><span>Nuestros Servicios</span></a></li>
+                            <li><a href="{{ url_for('experiencia_cenigaa') }}"><span>Experiencias</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;">
+                    <a href="#" class="site-menu-toggle js-menu-toggle text-white">
+                        <span class="icon-menu h3" style="color: #000;"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!--Empieza Bloque de contenidos-->
+    {% block content %}{% endblock %}
+    <!-- Footer -->
+
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <!-- Logo de Cenigaa -->
+            <div class="box">
+                <figure>
+                    <a href="{{ url_for('index') }}">
+                        <img src="{{ url_for('static', filename='svg/Cenigaa.svg') }}" alt="Logo Cenigaa">
+                    </a>
+                </figure>
+            </div>
+    
+            <!-- Enlaces de interés -->
+            <div class="box">
+                <h2>Enlaces de Ínteres</h2>
+                <ul class="footer-links">
+                    <li><a href="{{ url_for('nosotros') }}">Sobre Nosotros</a></li>
+                    <li><a href="{{ url_for('clasificacion_esal') }}">Proceso de calificación ESAL</a></li>
+                    <li><a href="{{ url_for('investigadores') }}">Investigadores</a></li>
+                    <li><a href="{{ url_for('administrativos') }}">Administrativos</a></li>
+                </ul>
+            </div>
+    
+            <!-- Contacto -->
+            <div class="box">
+                <h2>Contáctenos</h2>
+                <ul class="footer-links">
+                    <li>
+                        <p>Calle 8 No. 32-49 Universidad CORHUILA Prado Alto, Edificio de Laboratorios 4° piso, Neiva, Colombia.</p>
+                    </li>
+                    <li>
+                        <p>info@cenigaa.org</p>
+                    </li>
+                    <li>
+                        <p>3183835434</p>
+                    </li>
+                </ul>
+            </div>
+    
+            <!-- Redes Sociales -->
+            <div class="box">
+                <h2>SÍGUENOS</h2>
+                <div class="red-social">
+                    <a href="https://web.facebook.com/cenigaa" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/cenigaaoficial/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/centrodeinvestigacion-cenigaa/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Copyright -->
+        <div class="grupo-2">
+            <small><b>Copyright</b> &copy; 2023 <b>CENIGAA</b> - Todos los Derechos Reservados.</small>
+        </div>
+    
+        <!-- Botón de WhatsApp -->
+        <button type="button" class="btn-wsp" data-toggle="modal" data-target=".bd-example-modal-lg">
+            <i class="fa-brands fa-whatsapp"></i>
+        </button>
+    
+        <!-- Modal WhatsApp -->
+        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content fondo-cenigaa text-light">
+                    <div class="container text-center">
+                        <div class="title text-success d-block mb-4">
+                            <h2>Contactos Corporativos</h2>
+                            <img src="{{ url_for('static', filename='img/logo-cenigaa.png') }}" alt="Logo Cenigaa" width="80">
+                        </div>
+    
+                        <!-- Primera fila de contactos -->
+                        <div class="row">
+                            <div class="col">
+                                <a href="https://api.whatsapp.com/send?phone=573165313474&text=Hola Cristian. Me interesa conocer más acerca de "
+                                    target="_blank" class="btn btn-outline-success">
+                                    <i class="fa-brands fa-whatsapp"></i> Cristian Cifuentes
+                                </a>
+                                <p><strong>CENIGAA</strong></p>
+                            </div>
+                            <div class="col">
+                                <a href="https://api.whatsapp.com/send?phone=573023734600&text=Hola Andres. Me interesa conocer más acerca de "
+                                    target="_blank" class="btn btn-outline-success">
+                                    <i class="fa-brands fa-whatsapp"></i> Andres Palacios
+                                </a>
+                                <p><strong>AGROBUSINESS</strong></p>
+                            </div>
+                            <div class="col">
+                                <a href="https://api.whatsapp.com/send?phone=573164739816&text=Hola Jorge. Me interesa conocer más acerca de "
+                                    target="_blank" class="btn btn-outline-success">
+                                    <i class="fa-brands fa-whatsapp"></i> Jorge Chavarro
+                                </a>
+                                <p><strong>INTECC</strong></p>
+                            </div>
+                        </div>
+    
+                        <!-- Segunda fila de contactos -->
+                        <div class="row mt-5 mb-4">
+                            <div class="col">
+                                <a href="https://api.whatsapp.com/send?phone=573044692423&text=Hola Camilo. Me interesa conocer más acerca de "
+                                    target="_blank" class="btn btn-outline-success">
+                                    <i class="fa-brands fa-whatsapp"></i> Camilo Salas
+                                </a>
+                                <p><strong>GEO-PROCESSING</strong></p>
+                            </div>
+                            <div class="col">
+                                <a href="https://api.whatsapp.com/send?phone=573183835434&text=Hola Amalia. Me interesa conocer más acerca de "
+                                    target="_blank" class="btn btn-outline-success">
+                                    <i class="fa-brands fa-whatsapp"></i> Amalia Molina
+                                </a>
+                                <p><strong>LABGAA Mobile</strong></p>
+                            </div>
+                            <div class="col">
+                                <a href="https://api.whatsapp.com/send?phone=573183835436&text=Hola Jhon. Me interesa conocer más acerca de "
+                                    target="_blank" class="btn btn-outline-success">
+                                    <i class="fa-brands fa-whatsapp"></i> Jhon Chavarro
+                                </a>
+                                <p><strong>HBS</strong></p>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+    {% block scripts %}{% endblock %}
+    <!-- jQuery (CDN) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+    <!-- Popper.js (CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Archivos locales desde la carpeta static -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/animation-text.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery-3.3.1.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.sticky.js') }}"></script>
+    
+</body>
+
+</html>

@@ -1,0 +1,178 @@
+
+{%extends 'base.html'%}
+{%block title%}Investigadores{% endblock %}
+
+{% block css_input %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/black_nav.css') }}">
+<!--<link rel="stylesheet" href="{{ url_for('static', filename='css/investigadores.css') }}">-->
+{% endblock %}
+
+{% block content %}
+<main id="main">
+
+  <div class="section-title">
+      <h2>Investigadores de Cenigaa</h2>
+  </div>
+
+  <section id="team" class="team section-bg">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-6">
+                  <div class="member d-flex align-items-start">
+                      <div class="teampic">
+                          <img src="{{ url_for('static', filename='img/Fundadores/jorge.png') }}" class="img-fluid" style="width: 90%;" alt="Jorge Chavarro">
+                      </div>
+                      <div class="member-info">
+                          <h4>Jorge Chavarro</h4>
+                          <span>CEO Cenigaa</span>
+                          <p>Master en Hidrosistemas.</p>
+                          <div class="social">
+                              <a href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0000578789"><i class="fa-solid fa-envelope"></i></a>
+                              <a href="https://www.linkedin.com/in/jorge-chavarro/"><i class="fa-brands fa-linkedin"></i></a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-lg-6 mt-4 mt-lg-0">
+                  <div class="member d-flex align-items-start">
+                      <div class="teampic">
+                          <img src="{{ url_for('static', filename='img/Fundadores/amalia.jpg') }}" class="img-fluid" alt="Amalia Molina">
+                      </div>
+                      <div class="member-info">
+                          <h4>Amalia Molina</h4>
+                          <span>Investigadora Científica || Ciencia de los Alimentos</span>
+                          <p>Maestría en Ciencias Ambientales</p>
+                          <div class="social">
+                              <a href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0000632260"><i class="fa-solid fa-envelope"></i></a>
+                              <a href="https://www.linkedin.com/in/amalia-molina-chaux-39375458/"><i class="fa-brands fa-linkedin"></i></a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="row">
+              <div class="col-lg-6 mt-4">
+                  <div class="member d-flex align-items-start">
+                      <div class="teampic">
+                          <img src="{{ url_for('static', filename='img/investigadores/armandotorrente.jpg') }}" class="img-fluid" alt="Armando Torrente">
+                      </div>
+                      <div class="member-info">
+                          <h4>Armando Torrente</h4>
+                          <span>Director Científico</span>
+                          <p>Ph.d. Doctor en Ciencias Agrarias</p>
+                          <div class="social">
+                              <a href="https://www.linkedin.com/in/armando-torrente-trujillo-9ab9191ab/"><i class="fa-solid fa-envelope"></i></a>
+                              <a href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0000086100"><i class="fa-brands fa-linkedin"></i></a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-lg-6 mt-4">
+                  <div class="member d-flex align-items-start">
+                      <div class="teampic">
+                          <img src="{{ url_for('static', filename='img/investigadores/salas.PNG') }}" class="img-fluid" alt="Juan Camilo Salas">
+                      </div>
+                      <div class="member-info">
+                          <h4>Juan Camilo Salas</h4>
+                          <span>Analista de Datos</span>
+                          <p>Master en Ciencia de Datos</p>
+                          <div class="social">
+                              <a href="https://www.linkedin.com/in/camilo-salas-12016a145/"><i class="fa-brands fa-linkedin"></i></a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="row">
+              <div class="col-lg-6 mt-4">
+                  <div class="member d-flex align-items-start">
+                      <div class="teampic">
+                          <img src="{{ url_for('static', filename='img/investigadores/freddyescobar.jpg') }}" class="img-fluid" alt="Freddy Humberto Escobar">
+                      </div>
+                      <div class="member-info">
+                          <h4>Freddy Humberto Escobar</h4>
+                          <span>Director Científico Línea Energía</span>
+                          <p>Ph.d. Doctor en Ingeniería de Petróleos</p>
+                          <div class="social">
+                              <a href="https://www.linkedin.com/in/freddy-humberto-escobar-m-43162a24/"><i class="fa-brands fa-linkedin"></i></a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-lg-6 mt-4">
+                  <div class="member d-flex align-items-start">
+                      <div class="teampic">
+                          <img src="{{ url_for('static', filename='img/Fundadores/jhon chavarro.jpg') }}" class="img-fluid" alt="Jhon Chavarro">
+                      </div>
+                      <div class="member-info">
+                          <h4>Jhon Chavarro</h4>
+                          <span>Investigador Científico || Hidrosistemas</span>
+                          <p>Maestría en Hidrosistemas</p><br>
+                          <div class="social">
+                              <a href="https://www.linkedin.com/in/john-chavarro-b4aa334b/"><i class="fa-brands fa-linkedin"></i></a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="row">
+              <div class="col-lg-6 mt-4">
+                  <div class="member d-flex align-items-start">
+                      <div class="teampic">
+                          <img src="{{ url_for('static', filename='img/investigadores/alfredo olaya amaya.jpg') }}" class="img-fluid" alt="Alfredo Olaya Amaya">
+                      </div>
+                      <div class="member-info">
+                          <h4>Alfredo Olaya Amaya</h4>
+                          <span>Director Científico Línea Ambiente</span>
+                          <p>Ph.d. Doctor en Recursos Hidráulicos</p><br>
+                          <div class="social">
+                              <a href="https://www.linkedin.com/in/alfredo-olaya-amaya-5ab05618/?originalSubdomain=co"><i class="fa-brands fa-linkedin"></i></a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-lg-6 mt-4">
+                  <div class="member d-flex align-items-start">
+                      <div class="teampic">
+                          <img src="{{ url_for('static', filename='img/investigadores/Wilfredo.jpg') }}" class="img-fluid" alt="Wilfredo Marimon Bolívar">
+                      </div>
+                      <div class="member-info">
+                          <h4>Wilfredo Marimon Bolívar</h4>
+                          <span>Director Científico Línea Computacional</span>
+                          <p>Doctor en Ingeniería Ambiental y Recursos Naturales</p>
+                          <div class="social">
+                              <a href="https://www.linkedin.com/in/willy-marimon-bol%C3%ADvar-4538b240/?originalSubdomain=co"><i class="fa-brands fa-linkedin"></i></a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="row">
+              <div class="col-lg-6 mt-4">
+                  <div class="member d-flex align-items-start">
+                      <div class="teampic">
+                          <img src="{{ url_for('static', filename='img/investigadores/wilmer.PNG') }}" class="img-fluid" alt="Wilmer Valenzuela Molina">
+                      </div>
+                      <div class="member-info">
+                          <h4>Wilmer Valenzuela Molina</h4>
+                          <span>Investigador Científico Agroecología</span>
+                          <div class="social">
+                              <a href="https://www.linkedin.com/in/wilmer-valenzuela-molina-06b759116/"><i class="fa-brands fa-linkedin"></i></a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+</main>
+
+{% endblock %}

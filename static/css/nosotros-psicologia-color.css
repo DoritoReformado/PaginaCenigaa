@@ -1,0 +1,460 @@
+body {
+    background-color: #f9f9f9;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.concept-map ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.concept-text {
+    text-align: justify;
+}
+
+.concept-text.verde-t {
+    background: linear-gradient(rgba(115, 191, 0, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+    margin-top: -10px;
+    padding-top: 10px;
+    z-index: 8;
+    position: inherit;
+}
+
+.concept-text.azul-t {
+    background: linear-gradient(rgba(50, 139, 204, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+    margin-top: -10px;
+    padding-top: 10px;
+    z-index: 8;
+    position: inherit;
+}
+
+.concept-text.marron-t {
+    background: linear-gradient(rgba(115, 75, 39, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+    margin-top: -10px;
+    padding-top: 10px;
+    z-index: 8;
+    position: inherit;
+}
+
+
+.concept-map ul ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.concept-map li {
+    position: relative;
+    margin: 20px 0;
+}
+
+.concept {
+    padding: 15px 20px;
+    background-color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.cenigaa {
+    background: radial-gradient(ellipse at bottom, rgba(184, 134, 11, 0.7) 0%, rgba(255, 223, 85, 0.6) 15%, rgba(255, 255, 179, 0.5) 25%, rgba(255, 255, 255, 0) 35%);
+    ;
+    border-bottom: 2px solid black;
+}
+
+.verde {
+    background-color: #B5DC7A;
+    z-index: 11;
+    position: inherit;
+    border: 2px solid #B5DC7A;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.azul {
+    background-color: #BDD8EC;
+    border: 2px solid #BDD8EC;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 11;
+    position: inherit;
+}
+
+.marron {
+    background-color: #D5CAC0;
+    border: 2px solid #D5CAC0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 11;
+    position: inherit;
+}
+
+.concept-text {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #333;
+}
+
+.concept-map ul ul li {
+    margin: 0 30px;
+    width: 30%;
+}
+
+/* Líneas de conexión */
+.concept-map li.elemento::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    width: 2px;
+    height: 20px;
+    background: black;
+}
+
+.concept-map ul ul li::before {
+    top: -20px;
+}
+
+.concept-map ul ul li::after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    width: 50px;
+    height: 0px;
+    background: black;
+}
+
+.concept-map ul ul li:first-child::after {
+    left: 50%;
+    width: calc(50% + 50px);
+}
+
+.concept-map ul ul li:last-child::after {
+    left: -50px;
+    width: calc(50% + 50px);
+}
+
+.concept-map ul ul li:not(:first-child):not(:last-child)::after {
+    left: -50px;
+    width: 100px;
+}
+
+#logo_mapa {
+    width: 50%;
+}
+
+#logo_cenigaa_mapa {
+    margin: 0 auto;
+}
+
+#grafica_svg_psicologia {
+    width: 100%;
+    border: #fff 2px;
+}
+
+body#grafico_svg_psicologia {
+    color: #fff;
+}
+
+#cenigaa_timeline {
+    width: 100%;
+    border: #fff 2px;
+}
+
+.row.tarjetas {
+    margin-bottom: 2%;
+}
+
+.cards-img {
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.8) 40%, transparent 70%);
+    ;
+}
+
+#estructura_organizacional {
+    width: 100%;
+}
+
+
+/*CARDS FUNDADORES*/
+
+.founders-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.founder-card {
+    background-color: #fff;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.founder-card:hover {
+    transform: translateY(-10px);
+}
+
+.founder-photo {
+    background-color: #2c3e50;
+    padding: 20px;
+    text-align: center;
+}
+
+.founder-photo img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.founder-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.founder-info h3 {
+    margin: 10px 0;
+    font-size: 20px;
+    color: #2c3e50;
+}
+
+.founder-info p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #7f8c8d;
+}
+
+.research-lines {
+    font-size: 12px;
+    color: #4b3832;
+    margin: 10px 0;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 10px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.linkedin {
+    background-color: #0077b5;
+}
+
+.cvlac {
+    background-color: #4b3832;
+}
+
+.social-links a:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .founders-section {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+.fa-solid.fa-angles-right.fa-2x {
+    color: rgb(211, 211, 211);
+}
+
+#grafica_svg_psicologia {
+    min-width: 1200px;
+    min-height: 1000px;
+}
+
+
+.mobile-organizacional {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    /*background-color: #fff;*/
+    /*padding: 20px;*/
+    border-radius: 10px;
+    margin-top: 20vh;
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.verde {
+    background-color: #e0f7e9;
+    border-left: 5px solid #76b041;
+}
+
+.azul {
+    background-color: #e0f0fc;
+    border-left: 5px solid #0071bc;
+}
+
+.marron {
+    background-color: #f7e9e0;
+    border-left: 5px solid #8b5e3c;
+}
+
+.section-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.imagen_explicacion img {
+    width: 80%;
+
+}
+
+.section.azul .imagen_explicacion img {
+    width: 60%;
+
+}
+
+.explicacion p {
+    margin: 2vh 0vh 2vh 0vh;
+    line-height: 2vh;
+    font-size: 1.5vh;
+    text-align: justify;
+}
+
+.carrusel-linea-tiempo {
+    display: none;
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    margin-bottom: 3vh;
+}
+
+.contenedor-carrusel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    touch-action: pan-y;
+}
+
+.elemento-carrusel {
+    min-width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.año-evento {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #0071bc;
+}
+
+.contenido-evento h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #4d4d4d;
+}
+
+.contenido-evento p {
+    font-size: 2vh;
+    text-align: justify;
+    color: #666;
+}
+
+.img_time_slider{
+    display: flex;
+    width: 80%;
+    max-width: 600px;
+    vertical-align: bottom;
+}
+
+@media (max-width: 1300px) {
+    #grafica_svg_psicologia {
+        min-width: 800px;
+        min-height: 600px;
+    }
+
+    #cenigaa_timeline {
+        height: 900px;
+    }
+}
+
+@media (max-width: 1000px) {
+    #grafica_svg_psicologia {
+        display: none;
+    }
+
+    #cenigaa_timeline{
+        display: none;
+    }
+
+    .carrusel-linea-tiempo{
+        display: inline;
+    }
+
+    .mobile-organizacional {
+        display: flex;
+    }
+
+    .web-organizacional{
+        display: none;
+    }
+
+    .imagen_explicacion img {
+        width: 50%;
+    
+    }
+
+    .section.azul .imagen_explicacion img{
+        width: 35%;
+    }
+}
+
+@media (max-width: 750px){
+    .imagen_explicacion img {
+        width: 80%;
+    
+    }
+
+    .section.azul .imagen_explicacion img{
+        width: 60%;
+    }
+}

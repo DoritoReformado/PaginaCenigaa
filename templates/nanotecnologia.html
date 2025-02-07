@@ -1,0 +1,49 @@
+{%extends 'base.html'%}
+{%block title%}Biotecnología{% endblock %}
+
+{% block css_input %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/black_nav.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/investigaciones.css') }}">
+{% endblock %}
+
+{%block content%}
+<div id="septima_Carta">
+  <div class="card">
+      <div class="titulo">
+          Séptima Línea Investigativa: Nanotecnología
+      </div>
+      <div class="factores">
+          <p class="subtitulo">Factores Críticos de la cadena</p>
+          <p>
+              <b>Investigación y desarrollo:</b> Creación de nuevos materiales y procesos a escala nanométrica que permitan
+              avances en sectores clave como la medicina, la energía y la industria.<br>
+              <b>Aplicaciones en salud:</b> Uso de nanopartículas para tratamientos médicos más precisos y efectivos.<br>
+              <b>Sostenibilidad:</b> Desarrollo de tecnologías basadas en nanomateriales que reduzcan el impacto ambiental
+              en la producción industrial.<br>
+          </p>
+      </div>
+      <div class="importancia">
+          <p class="subtitulo">Importancia y relevancia para los sectores</p>
+          <p>La nanotecnología tiene un potencial disruptivo en sectores como la salud, la energía y la industria,
+              ofreciendo soluciones innovadoras que mejoran la eficiencia y reducen costos. Además, permite el desarrollo de
+              productos más duraderos y sostenibles, lo que impacta positivamente en el medio ambiente y en la
+              competitividad empresarial.</p>
+      </div>
+      <div class="objetivos">
+          <p class="subtitulo">Objetivos de desarrollo sostenible a los que apunta</p>
+          <div class="row_ods">
+              <img class="ods_image" src="{{ url_for('static', filename='img/ODS/S-WEB-Goal-03.png') }}" alt="Objetivo 3">
+              <img class="ods_image" src="{{ url_for('static', filename='img/ODS/S-WEB-Goal-09.png') }}" alt="Objetivo 9">
+              <img class="ods_image" src="{{ url_for('static', filename='img/ODS/S-WEB-Goal-12.png') }}" alt="Objetivo 12">
+              <img class="ods_image" src="{{ url_for('static', filename='img/ODS/S-WEB-Goal-13.png') }}" alt="Objetivo 13">
+          </div>
+      </div>
+      <div class="lineamientos">
+          <p class="subtitulo">Lineamientos del PND a los que apunta</p>
+          <p>Internacionalización y transformación productiva para la vida y acción climática. Catalizadores: A y C.</p>
+          <p>Seguridad humana y justicia social. Catalizadores: B.</p>
+          <p>Convergencia Regional. Catalizadores: 4.</p>
+      </div>
+  </div>
+</div>
+{% endblock %}

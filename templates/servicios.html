@@ -1,0 +1,105 @@
+{%extends 'base.html'%}
+{%block title%}Servicios - CENIGAA{% endblock %}
+
+{% block css_input %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/black_nav.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/servicios.css') }}">
+{% endblock %}
+
+{% block content %}
+  <main id="main">
+
+    <div class="section-title pt-5">
+      <h2>Servicios Especializados de CENIGAA</h2>
+    </div>
+    <div class="custom-card-container">
+      <div class="custom-card custom-card-capacitaciones">
+        <div class="custom-card-icon">
+          <i class="fas fa-chalkboard-teacher"></i>
+        </div>
+        <h3>Capacitaciones</h3>
+        <p>Programas y cursos especializados.</p>
+      </div>
+
+      <div class="custom-card custom-card-consultoria">
+        <div class="custom-card-icon">
+          <i class="fas fa-briefcase"></i>
+        </div>
+        <h3>Consultoría</h3>
+        <p>Soluciones personalizadas para tu negocio.</p>
+      </div>
+
+      <div class="custom-card custom-card-servicios">
+        <div class="custom-card-icon">
+          <i class="fas fa-building"></i>
+        </div>
+        <h3>Servicios Empresariales</h3>
+        <p>Asistencia y servicios profesionales.</p>
+      </div>
+    </div>
+
+
+    <div class="section-title">
+      <h2 id="segunda_seccion">Campos que Aborda</h2>
+      <section class="services">
+        <div class="container">
+          <div class="row">
+            <!-- GEO Card -->
+            <div class="col-md-6 col-lg-4 d-flex" data-aos="fade-up">
+              <div class="service-card icon-box-pink">
+                <div class="icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <h4 class="title">GEO</h4>
+                <ul class="service-list">
+                  <li><i class="fa-regular fa-circle-check"></i> Diagnóstico de Daño de Formación</li>
+                  <li><i class="fa-regular fa-circle-check"></i> Ingeniería Conceptual - Detalle en Manejo de Aguas de
+                    Formación</li>
+                  <li><i class="fa-regular fa-circle-check"></i> Valoración de Incidentes Ambientales</li>
+                  <li><i class="fa-regular fa-circle-check"></i> Ingeniería Conceptual - Fuente Solar</li>
+                  <li><i class="fa-regular fa-circle-check"></i> Modelación Mecánica de Fluidos Computación</li>
+                  <li><i class="fa-regular fa-circle-check"></i> IoT Aplicado a la Gestión de Energía</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- AGRO Card -->
+            <div class="col-md-6 col-lg-4 d-flex" data-aos="fade-up" data-aos-delay="100">
+              <div class="service-card icon-box-cyan">
+                <div class="icon">
+                  <i class="fa-solid fa-tractor"></i>
+                </div>
+                <h4 class="title">AGRO</h4>
+                <ul class="service-list">
+                  <li><i class="fa-regular fa-circle-check"></i> Agricultura de Precisión Agua - Suelo - Planta</li>
+                  <li><i class="fa-regular fa-circle-check"></i> Estudios de Suelos con Enfoque de Salud</li>
+                  <li><i class="fa-regular fa-circle-check"></i> Estudios de Ecofisiología y Respuesta Productiva</li>
+                  <li><i class="fa-regular fa-circle-check"></i> Integración de Variables Agroclimáticas</li>
+                  <li><i class="fa-regular fa-circle-check"></i> Desarrollo de Sistemas IoT + BigData</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- AMBIENTE Card -->
+            <div class="col-md-6 col-lg-4 d-flex" data-aos="fade-up" data-aos-delay="200">
+              <div class="service-card icon-box-green">
+                <div class="icon">
+                  <i class="fa-brands fa-envira"></i>
+                </div>
+                <h4 class="title">AMBIENTE</h4>
+                <ul class="service-list">
+                  <li><i class="fa-regular fa-circle-check"></i> Estudios Ambientales</li>
+                  <li><i class="fa-regular fa-circle-check"></i> Gestión Integral del Recurso Hídrico</li>
+                  <li><i class="fa-regular fa-circle-check"></i> Hidroinformática</li>
+                  <li><i class="fa-regular fa-circle-check"></i> Ecohidráulica y Ecohidrología</li>
+                  <li><i class="fa-regular fa-circle-check"></i> Modelación de la Calidad del Agua</li>
+                  <li><i class="fa-regular fa-circle-check"></i> Sistemas de Tratamiento de Aguas</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+{% endblock %}

@@ -1,0 +1,142 @@
+{%extends 'base.html'%}
+{%block title%}Fundadores - Cenigaa{% endblock %}
+
+{% block css_input %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/black_nav.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/nosotros-psicologia-color.css') }}">
+{% endblock %}
+
+{%block content%}
+<main id="main">
+    <!-- CARDS MOBILE -->
+    <div class="section-title fundadores">
+        <h2>Fundadores del Centro de Investigación Cenigaa</h2>
+    </div>
+    <section class="container founders-section" id="fundadores">
+        <!-- Founder 1 -->
+        <div class="founder-card">
+            <div class="founder-photo">
+                <img src="{{ url_for('static', filename='img/Fundadores/amalia.jpg') }}" alt="Fundador 1">
+            </div>
+            <div class="founder-info">
+                <h3>Amalia Molina Chaux</h3>
+                <p>Maestría en Ciencias Ambientales</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/amalia-molina-chaux-39375458/" target="_blank" class="linkedin">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0000632260"
+                        target="_blank" class="cvlac">CvLAC</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Founder 2 -->
+        <div class="founder-card">
+            <div class="founder-photo">
+                <img src="{{ url_for('static', filename='img/Fundadores/jorge.png') }}" alt="Fundador 2">
+            </div>
+            <div class="founder-info">
+                <h3>Jorge Iván Chavarro Díaz</h3>
+                <p>Maestría en Hidrosistemas</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/jorge-chavarro/" class="linkedin">
+                        <i class="fab fa-linkedin-in"></i> LinkedIn
+                    </a>
+                    <a href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0000578789"
+                        class="cvlac">CvLAC</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Founder 3 -->
+        <div class="founder-card">
+            <div class="founder-photo">
+                <img src="{{ url_for('static', filename='img/Fundadores/jhon chavarro.jpg') }}" alt="Fundador 3">
+            </div>
+            <div class="founder-info">
+                <h3>John Alexander Chavarro Díaz</h3>
+                <p>Maestría en Hidrosistemas</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/john-chavarro-b4aa334b/" class="linkedin">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" style="display: none;" class="cvlac">CvLAC</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Founder 4 -->
+        <div class="founder-card">
+            <div class="founder-photo">
+                <img src="{{ url_for('static', filename='img/Fundadores/nnhombre.png') }}" alt="Fundador 4">
+            </div>
+            <div class="founder-info">
+                <h3>Gustavo Adolfo Trujillo Lemus</h3>
+                <p>B.S. Ingeniería Electrónica</p>
+                <div class="social-links">
+                    <a href="#" class="linkedin" style="display: none;">
+                        <i class="fab fa-linkedin-in"></i> LinkedIn
+                    </a>
+                    <a href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0000992518"
+                        class="cvlac">CvLAC</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Founder 5 -->
+        <div class="founder-card">
+            <div class="founder-photo">
+                <img src="{{ url_for('static', filename='img/Fundadores/nnhombre.png') }}" alt="Fundador 5">
+            </div>
+            <div class="founder-info">
+                <h3>Oscar Eduardo Figueroa Paiva</h3>
+                <p>Maestría en Hidrosistemas</p>
+                <div class="social-links">
+                    <a href="#" class="linkedin" style="display: none;">
+                        <i class="fab fa-linkedin-in"></i> LinkedIn
+                    </a>
+                    <a href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0000001807"
+                        class="cvlac">CvLAC</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Founder 6 -->
+        <div class="founder-card">
+            <div class="founder-photo">
+                <img src="{{ url_for('static', filename='img/Fundadores/nnhombre.png') }}" alt="Fundador 6">
+            </div>
+            <div class="founder-info">
+                <h3>Ramiro Méndez</h3>
+                <p>Especialista en Gerencia de Proyectos</p>
+                <div style="display: none;" class="social-links">
+                    <a href="#" class="linkedin">
+                        <i class="fab fa-linkedin-in"></i> LinkedIn
+                    </a>
+                    <a href="#" class="cvlac">CvLAC</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Founder 7 -->
+        <div class="founder-card">
+            <div class="founder-photo">
+                <img src="{{ url_for('static', filename='img/Fundadores/nnmujer.png') }}" alt="Fundador 7">
+            </div>
+            <div class="founder-info">
+                <h3>Diana Janeth Samboni Caicedo</h3>
+                <p>Maestría en Gerencia Integral de Proyectos</p>
+                <div style="display: none;" class="social-links">
+                    <a href="https://www.linkedin.com/in/jorge-chavarro/" class="linkedin">
+                        <i class="fab fa-linkedin-in"></i> LinkedIn
+                    </a>
+                    <a href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0000578789"
+                        class="cvlac">CvLAC</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+{% endblock %}

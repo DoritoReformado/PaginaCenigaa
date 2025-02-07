@@ -1,0 +1,89 @@
+{%extends 'base.html'%}
+{%block title%}Sobre Nosotros{% endblock %}
+
+{% block css_input %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/black_nav.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/nosotros.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/nosotros-psicologia-color.css') }}">
+{% endblock %}
+
+{%block content%}
+<main id="main">
+  <!-- ======= Why Us Section ======= -->
+  <section class="why-us section-bg mt-5" id="video-presentacion">
+      <div class="container">
+          <div class="row mt-4">
+              <div class="col-lg-6 col-md-12 video-box mt-3 mb-3">
+                  <iframe width="100%" height="100%" src="https://www.youtube.com/embed/fuG601kDCNc"
+                      title="YouTube video player" frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen></iframe>
+              </div>
+              <div class="col-lg-6 d-flex flex-column justify-content-center p-5">
+                  <div class="icon-box nav-link" style="padding: 0;">
+                      <div class="icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" style="color: rgb(38, 82, 185);" width="38"
+                              height="38" fill="currentColor" class="bi bi-file-slides" viewBox="0 0 16 16">
+                              <path
+                                  d="M5 4a.5.5 0 0 0-.496.438l-.5 4A.5.5 0 0 0 4.5 9h3v2.016c-.863.055-1.5.251-1.5.484 0 .276.895.5 2 .5s2-.224 2-.5c0-.233-.637-.429-1.5-.484V9h3a.5.5 0 0 0 .496-.562l-.5-4A.5.5 0 0 0 11 4H5zm2 3.78V5.22c0-.096.106-.156.19-.106l2.13 1.279a.125.125 0 0 1 0 .214l-2.13 1.28A.125.125 0 0 1 7 7.778z" />
+                              <path
+                                  d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z" />
+                          </svg>
+                      </div>
+                      <h4 class="title"><a href="#">Presentación</a></h4>
+                      <p class="description">El Centro de Investigación en Ciencias y Recursos GeoAgroAmbientales
+                          (CENIGAA) es uno de los principales centros de investigación del sur del Huila, dedicado a
+                          la generación de conocimiento e innovación en áreas estratégicas clave. Con un enfoque en la
+                          energía, la agricultura y el medio ambiente, CENIGAA lidera proyectos que buscan el
+                          desarrollo sostenible y competitivo de la región. A través de sus líneas de investigación,
+                          el centro impulsa la ecoeficiencia productiva, la gestión integral de suelos y recursos
+                          hídricos, la mitigación del cambio climático, y la biotecnología, entre otras. CENIGAA es un
+                          referente en la región por su capacidad para transformar desafíos en oportunidades de
+                          crecimiento científico y tecnológico.
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section><!-- End Why Us Section -->
+
+  <!-- ======= Service Details Section ======= -->
+  <section class="service-details" id="mision_y_vision">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-6 col-md-12 col-12 d-flex align-items-stretch">
+                  <div class="card">
+                      <div class="card-img">
+                          <img src="{{ url_for('static', filename='img/1.jpg') }}" alt="Misión">
+                      </div>
+                      <div class="card-body">
+                          <h5 class="card-title"><a href="#">Misión</a></h5>
+                          <p class="card-text">Generar y gestionar conocimiento mediante la praxis de la Ciencia, la
+                              Tecnología y la Innovación con propósito de contribuir a un desarrollo competitivo y
+                              sostenible de las regiones sustentadas en sus recursos Geo – Agro - Ambientales.
+                          </p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-6 col-md-12 col-12 d-flex align-items-stretch">
+                  <div class="card">
+                      <div class="card-img">
+                          <img src="{{ url_for('static', filename='img/2.jpg') }}" alt="Visión">
+                      </div>
+                      <div class="card-body">
+                          <h5 class="card-title"><a href="#">Visión</a></h5>
+                          <p class="card-text">En el 2030, CENIGAA será un referente gestor de conocimiento,
+                              tecnología y articulación científica-social para el desarrollo competitivo y sostenible
+                              de las regiones con impacto positivo en sus diversas dinámicas promoviendo un entorno
+                              habilitante en la generación de soluciones a las demandas territoriales con alternativas
+                              de enfoque holístico desde la CTeI.
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+</main>
+
+{% endblock %}

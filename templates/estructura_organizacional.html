@@ -1,0 +1,31 @@
+{%extends 'base.html'%}
+{%block title%}Estructura Organizacional - Cenigaa{% endblock %}
+
+{% block css_input %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/black_nav.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/nosotros-psicologia-color.css') }}">
+{% endblock %}
+
+{%block content%}
+<main id="main">
+  <section class="container web-organizacional">
+    <div class="text-center">
+      <div class="section-title">
+        <h2>Estructura Organizacional</h2>
+      </div>
+      <!-- Ruta corregida para la imagen principal -->
+      <img id="estructura_organizacional" src="{{ url_for('static', filename='svg/est_org_img.png') }}" alt="Estructura Organizacional">
+    </div>
+  </section>
+
+  <section class="container mobile-organizacional">
+    <!-- Rutas corregidas para las imágenes móviles -->
+    <img id="estructura_organizacional" src="{{ url_for('static', filename='svg/est_org_mobile/graficas pagina-03.svg') }}" alt="Estructura Organizacional Móvil 1">
+    <img id="estructura_organizacional" src="{{ url_for('static', filename='svg/est_org_mobile/graficas pagina-04.svg') }}" alt="Estructura Organizacional Móvil 2">
+    <img id="estructura_organizacional" src="{{ url_for('static', filename='svg/est_org_mobile/graficas pagina-02.svg') }}" alt="Estructura Organizacional Móvil 3">
+    <img id="estructura_organizacional" src="{{ url_for('static', filename='svg/est_org_mobile/graficas pagina-05.svg') }}" alt="Estructura Organizacional Móvil 4">
+  </section>
+</main>
+
+
+{% endblock %}

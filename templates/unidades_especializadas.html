@@ -1,0 +1,148 @@
+{%extends 'base.html'%}
+{%block title%}Toxicologia Ambiental{% endblock %}
+
+{% block css_input %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/black_nav.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/unidades_especializadas.css') }}">
+{% endblock %}
+
+{%block content%}
+<div class="container content">
+    <div class="fila">
+        <div class="container_interno" id="G-pro">
+            <!-- Sección G-PRO -->
+            <div class="row title">
+                <div class="col text-center">
+                    <h2>G-PRO (GEO PROCESSING)</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <img src="{{ url_for('static', filename='svg/Gpro.svg') }}" alt="G-PRO" />
+                </div>
+                <div class="col-md-6">
+                    <p class="fst-italic">
+                        Data Science – Machine Learning - HPC La integración de Sensores Remotos Multiespectrales y Computo
+                        científico permiten generar soluciones basadas en las características particulares y diferenciales de los
+                        sistemas.
+                    </p>
+                    <p>
+                        Aplicación AGRO - Agricultura de precisión en:
+                    <ul>
+                        <li>Fenotipado</li>
+                        <li>Variabilidad espacial</li>
+                        <li>Estrés hídrico</li>
+                        <li>Fito-sanidad</li>
+                        <li>Nutrición vegetal</li>
+                        <li>Modelos digitales de terrenos</li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col text-center lineamientos">
+                    <p><strong>Lineamientos de Investigación</strong></p>
+                    <p>Fenotipado, Variabilidad Espacial, Estrés Hídrico, Fito-sanidad, Nutrición Vegetal, Modelos
+                        Digitales de Terreno.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container_interno" id="AgroBussiness">
+            <!-- Sección AGRO-BUSINESS -->
+            <div class="row title">
+                <div class="col text-center">
+                    <h2>AGRO-BUSINESS 4.0 (Reverdeciendo el mundo)</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <img src="{{ url_for('static', filename='svg/AgroBussines.svg') }}" alt="AgroBusiness" />
+                </div>
+                <div class="col-md-6">
+                    <p class="fst-italic">
+                        Agribusiness 4.0 (AGB4) está basado en los ODS y se enfoca en el desarrollo socioeconómico de productores de los
+                        diferentes sectores agrícolas que apropien las SbN como parte de su estrategia de sostenibilidad.
+                    </p>
+                    <p>
+                        AGB4 es plataforma tecnológica gestora de conocimiento como apoyo a la consolidación de un Sistema
+                        de Seguridad Agroalimentaria de acuerdo con la definición FAO.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row mt-3 ">
+                <div class="col text-center lineamientos">
+                    <p><strong>Lineamientos de Investigación</strong></p>
+                    <p>Desarrollo sostenible, Seguridad Agroalimentaria, Valoración de Servicios Ecosistémicos, Cadenas
+                        Cortas de Comercialización.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container_interno" id="NRMA">
+        <!-- Sección NRMA -->
+        <div class="row title">
+            <div class="col text-center">
+                <h2>NRMA (NODO REGIONAL DE MODELACION AMBIENTAL)</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 text-center">
+                <img src="{{ url_for('static', filename='svg/nrma.svg') }}" alt="NRMA" />
+            </div>
+            <div class="col-md-6">
+                <p class="fst-italic">
+                    NRMA es un laboratorio de cómputo científico para las ciencias ambientales e Ingeniería que se
+                    enfoca en las áreas estratégicas de Energía, Agricultura y Ambiente mediante iniciativas de Ciencia, Tecnología e
+                    Innovación (CTeI).
+                </p>
+                <p>
+                    La modelación matemática, la algoritmia y la programación de alto nivel permiten abordar retos del
+                    análisis de procesos GeoAgroAmbientales.
+                </p>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col text-center lineamientos">
+                <p><strong>Lineamientos de Investigación</strong></p>
+                <p>Ciencia de Datos, GeoAgroAmbientales, Algoritmia, Computo de Alto Rendimiento, Modelación Matemática.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container_interno" id="DSGAA">
+        <!-- Sección HBS -->
+        <div class="row title">
+            <div class="col text-center">
+                <h2>DSGAA (DINAMICA DE SISTEMAS GEOAGROAMBIENTALES)</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 text-center">
+                <img src="{{ url_for('static', filename='img/dsgaa.jpg') }}" alt="HBS" />
+            </div>
+            <div class="col-md-6">
+                <p class="fst-italic">
+                    El grupo de investigación en Dinámica de Sistemas GeoAgroAmbientales -DSGAA es la unidad especializada de investigación de CENIGAA. Esta unidad integra una visión holística del entorno
+                    para obtener una interpretación comprensiva de los procesos en el marco de su área de acción para dar solución a limitaciones y problemáticas que limitan el desarrollo de las regiones.
+                </p>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col text-center lineamientos">
+                <p><strong>Lineamientos de Investigación</strong></p>
+                <p>Relación Agricultura – Ambiente, Modelos Digitales de Terreno, Ecohidráulica & Ecohidrología.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

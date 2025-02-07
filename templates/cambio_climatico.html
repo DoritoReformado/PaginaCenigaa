@@ -1,0 +1,48 @@
+{%extends 'base.html'%}
+{%block title%}Cambio Climatico - Cenigaa{% endblock %}
+
+{% block css_input %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/black_nav.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/investigaciones.css') }}">
+{% endblock %}
+
+{%block content%}
+<div id="segunda_Carta">
+  <div class="card">
+      <div class="titulo">
+          Segunda Línea Investigativa: Cambio Climático
+      </div>
+      <div class="factores">
+          <p class="subtitulo">Factores Críticos de la cadena</p>
+          <p>Evaluación de riesgos y medidas adaptativas ante el cambio climático en las actividades antrópicas.</p>
+      </div>
+      <div class="importancia">
+          <p class="subtitulo">Importancia y relevancia para los sectores</p>
+          <p>La implementación de medidas de mitigación y adaptación ante el cambio climático reducirá los impactos
+              ambientales, económicos y sociales, especialmente en zonas de riesgo por su altitud, inestabilidad de suelos y
+              creciente ocurrencia de eventos climáticos extremos.</p>
+      </div>
+      <div class="objetivos">
+          <p class="subtitulo">Objetivos de desarrollo sostenible a los que apunta</p>
+          <div class="row_ods">
+              <!-- Rutas corregidas para las imágenes de los ODS -->
+              <img class="ods_image" src="{{ url_for('static', filename='img/ODS/S-WEB-Goal-09.png') }}" alt="ODS 09">
+              <img class="ods_image" src="{{ url_for('static', filename='img/ODS/S-WEB-Goal-11.png') }}" alt="ODS 11">
+              <img class="ods_image" src="{{ url_for('static', filename='img/ODS/S-WEB-Goal-12.png') }}" alt="ODS 12">
+              <img class="ods_image" src="{{ url_for('static', filename='img/ODS/S-WEB-Goal-13.png') }}" alt="ODS 13">
+              <img class="ods_image" src="{{ url_for('static', filename='img/ODS/S-WEB-Goal-15.png') }}" alt="ODS 15">
+          </div>
+      </div>
+      <div class="lineamientos">
+          <p class="subtitulo">Lineamientos del PND a los que apunta</p>
+          <p>Ordenamiento del territorio alrededor del agua y justicia ambiental. Catalizadores: 1, 2, 3 y 4.</p>
+          <p>Seguridad humana y justicia social. Catalizadores: B y C.</p>
+          <p>Derecho humano a la alimentación. Catalizadores: 1, 2, y 5.</p>
+          <p>Internacionalización, transformación productiva para la vida y acción climática. Catalizadores: A, B y C.</p>
+          <p>Convergencia Regional. Catalizadores: 4.</p>
+      </div>
+  </div>
+</div>
+
+
+{% endblock %}

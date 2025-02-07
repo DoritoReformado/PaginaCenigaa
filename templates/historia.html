@@ -1,0 +1,104 @@
+{%extends 'base.html'%}
+{%block title%}Historia - Cenigaa{% endblock %}
+
+{% block css_input %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/black_nav.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/nosotros-psicologia-color.css') }}">
+{% endblock %}
+
+{% block content %}
+<main id="main">
+    <section class="container historia">
+        <div class="text-center">
+            <div class="section-title">
+                <h2>Historia</h2>
+            </div>
+            <!-- Ruta corregida para el iframe -->
+            <iframe src="{{ url_for('static', filename='svg/cenigaa_timeline.svg') }}" id="cenigaa_timeline" width="1200px" height="1200px"></iframe>
+
+            <!-- CARROUSEL MOBILE -->
+
+            <div class="carrusel-linea-tiempo">
+                <div class="contenedor-carrusel" id="contenedor-carrusel">
+                    <!-- Elemento Carrusel 1 -->
+                    <div class="elemento-carrusel activo">
+                        <div class="año-evento">2010</div>
+                        <div class="contenido-evento">
+                            <h3>Creación del Centro de Investigación</h3>
+                            <p>El Centro de Investigación en Ciencias y Recursos GeoAgroAmbientales (CENIGAA) fue
+                                fundado por egresados de la Universidad Surcolombiana, formados en el grupo GHIDA de la Facultad
+                                de Ingeniería. Colaboraron con grupos reconocidos por Colciencias, como:<br>
+                                ECOSURC (Ecosistemas Surcolombianos).<br>
+                                GIPE (Grupo de Investigación Prueba de Pozos).<br>
+                                COFA (Comportamiento de Fases).</p>
+                        </div>
+                        <img class="img_time_slider" src="{{ url_for('static', filename='img/fundacion.png') }}">
+                    </div>
+
+                    <!-- Elemento Carrusel 2 -->
+                    <div class="elemento-carrusel">
+                        <div class="año-evento">2011 - 2014</div>
+                        <div class="contenido-evento">
+                            <h3>Iniciativas CTel con aliados estratégicos</h3>
+                            <p>Se generaron iniciativas de CTeI en colaboración con la Universidad Surcolombiana,
+                                ECOPETROL, Gobernación del Huila, INCODER, CINDETS, CENIRED, SEI, CEPSA, CORHUILA y FCTeI-SGR,
+                                entre otros.</p>
+                        </div>
+                        <img class="img_time_slider" src="{{ url_for('static', filename='img/alianzas_est.png') }}">
+                    </div>
+
+                    <!-- Elemento Carrusel 3 -->
+                    <div class="elemento-carrusel">
+                        <div class="año-evento">2015</div>
+                        <div class="contenido-evento">
+                            <h3>Certificación ISO y creación del NRMA</h3>
+                            <p>CENIGAA obtuvo la certificación ISO 9001:2008 para servicios de investigación,
+                                desarrollo tecnológico, innovación y proyectos relacionados con la conservación de recursos
+                                naturales. Además, lideró la creación del Nodo Regional de Modelación Ambiental (NRMA) junto a la
+                                Gobernación del Huila y CORHUILA, siendo el primer laboratorio de cómputo científico de alto nivel.
+                            </p>
+                        </div>
+                        <img class="img_time_slider" src="{{ url_for('static', filename='img/iso_certificado.png') }}">
+                    </div>
+
+                    <!-- Elemento Carrusel 4 -->
+                    <div class="elemento-carrusel">
+                        <div class="año-evento">2016 - 2017</div>
+                        <div class="contenido-evento">
+                            <h3>Summer Research Camp</h3>
+                            <p>CENIGAA impulsó la iniciativa Summer Research Camp (SRC) para fomentar vocaciones
+                                científicas en colaboración con la Universidad de Oklahoma. Además, organizó el Primer Congreso
+                                Internacional y Segundo Nacional de Ríos y Humedales, reuniendo a expertos y estudiantes nacionales
+                                e internacionales.</p>
+                        </div>
+                        <img class="img_time_slider" src="{{ url_for('static', filename='img/summer_research.png') }}">
+                    </div>
+
+                    <!-- Elemento Carrusel 5 -->
+                    <div class="elemento-carrusel">
+                        <div class="año-evento">2018 - 2019</div>
+                        <div class="contenido-evento">
+                            <h3>Transformación Digital del Agro Huilense</h3>
+                            <p>CENIGAA obtuvo reconocimiento social en la región Surcolombiana, integrando mesas técnicas y comités
+                                en el Huila, como:<br>
+                                SIDECTI Huila (Ciencia, Tecnología e Innovación).<br>
+                                Comité de Cambio Climático.<br>
+                                Mesa Fitosanitaria.<br>
+                                Comité de Acuicultura.<br>
+                                CRECI (Competitividad e Innovación).<br>
+                                GLT (Liderazgo Territorial), apoyando el plan de Ordenamiento Productivo y Social
+                                Rural.<br>
+                                También impulsó la transformación digital del agro en el Huila, en convenio con
+                                Minciencias, Cancillería y aliados internacionales.</p>
+                        </div>
+                        <img class="img_time_slider" src="{{ url_for('static', filename='img/transformacion_digital_agro.png') }}">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+</main>
+{% endblock %}

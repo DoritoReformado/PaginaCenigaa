@@ -1,0 +1,73 @@
+{%extends 'base.html'%}
+{%block title%}Revisoria Fiscal - Cenigaa{% endblock %}
+
+{% block css_input %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/black_nav.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/complementos.css') }}">
+{% endblock %}
+
+{%block content%}
+
+<div class="container-content salud" id="revisoria_fiscal">
+    <h1>Revisoría Fiscal en CENIGAA</h1>
+
+    <div class="highlight">
+        <p>La Revisoría Fiscal es un pilar fundamental en CENIGAA, garantizando la transparencia, legalidad y
+            eficiencia en la gestión financiera de nuestra organización.</p>
+    </div>
+
+    <h2>¿Qué es la Revisoría Fiscal?</h2>
+    <p>En CENIGAA, la revisoría fiscal se encarga de supervisar el cumplimiento normativo, la adecuada presentación
+        de los estados financieros, y la correcta administración de los recursos.</p>
+
+    <h2>Funciones del Revisor Fiscal en CENIGAA</h2>
+    <p>El revisor fiscal tiene las siguientes funciones dentro de CENIGAA:</p>
+    <ul>
+        <li><strong>Revisión y auditoría de los estados financieros:</strong> Verifica que los informes financieros
+            reflejen fielmente la situación económica de la entidad.</li>
+        <li><strong>Supervisión del cumplimiento legal:</strong> Asegura que todas las actividades de CENIGAA
+            cumplan con las leyes y regulaciones aplicables.</li>
+        <li><strong>Evaluación de procesos internos:</strong> Realiza auditorías periódicas para mejorar la
+            eficiencia y eficacia de los procesos internos.</li>
+        <li><strong>Elaboración de informes:</strong> Presenta informes detallados sobre la situación financiera y
+            operativa de CENIGAA.</li>
+    </ul>
+
+    <h2>Importancia de la Revisoría Fiscal para CENIGAA</h2>
+    <p>El rol de la revisoría fiscal es fundamental para:</p>
+    <ul>
+        <li>Garantizar la confianza de socios, colaboradores y entidades gubernamentales.</li>
+        <li>Prevenir y detectar posibles irregularidades financieras.</li>
+        <li>Cumplir con la normativa nacional e internacional.</li>
+    </ul>
+
+    <h2>Cumplimiento Normativo</h2>
+    <p>CENIGAA está comprometida con los más altos estándares de cumplimiento y transparencia, asegurando la
+        legalidad y el manejo adecuado de los recursos públicos y privados.</p>
+</div>
+
+<ul class="lista-archivos">
+    <li class="archivo-item">
+        <img class="icono-archivo" src="https://cdn-icons-png.flaticon.com/512/337/337946.png" alt="Icono PDF" width="20">
+        <a class="nombre-archivo" href="{{ url_for('static', filename='docs/estados_financieros/EstadosFinancieros2019.pdf') }}" target="_blank">Estados Financieros 2019</a>
+    </li>
+    <li class="archivo-item">
+        <img class="icono-archivo" src="https://cdn-icons-png.flaticon.com/512/337/337946.png" alt="Icono PDF" width="20">
+        <a class="nombre-archivo" href="{{ url_for('static', filename='docs/estados_financieros/EstadosFinancieros2020.pdf') }}" target="_blank">Estados Financieros 2020</a>
+    </li>
+    <li class="archivo-item">
+        <img class="icono-archivo" src="https://cdn-icons-png.flaticon.com/512/337/337946.png" alt="Icono PDF" width="20">
+        <a class="nombre-archivo" href="{{ url_for('static', filename='docs/estados_financieros/EstadosFinancieros2021.pdf') }}" target="_blank">Estados Financieros 2021</a>
+    </li>
+    <li class="archivo-item">
+        <img class="icono-archivo" src="https://cdn-icons-png.flaticon.com/512/337/337946.png" alt="Icono PDF" width="20">
+        <a class="nombre-archivo" href="{{ url_for('static', filename='docs/estados_financieros/EstadosFinancieros2022.pdf') }}" target="_blank">Estados Financieros 2022</a>
+    </li>
+    <li class="archivo-item">
+        <img class="icono-archivo" src="https://cdn-icons-png.flaticon.com/512/337/337946.png" alt="Icono PDF" width="20">
+        <a class="nombre-archivo" href="{{ url_for('static', filename='docs/estados_financieros/EstadosFinancieros2023.pdf') }}" target="_blank">Estados Financieros 2023</a>
+    </li>
+</ul>
+
+
+{% endblock %}

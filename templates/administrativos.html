@@ -1,0 +1,122 @@
+{% extends 'base.html' %}
+
+{% block title %}Administrativos - Cenigaa{% endblock %}
+{% block css_input %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/black_nav.css') }}">
+{% endblock %}
+
+
+{% block content %}
+<main id="main">
+  <div class="section-title">
+      <h2>Administrativos de Cenigaa</h2>
+  </div>
+
+  <section id="team" class="team section-bg">
+      <div class="container">
+
+          <!-- Primera fila -->
+          <div class="row">
+              <div class="col-lg-6 mt-4">
+                  <div class="member d-flex align-items-start">
+                      <!-- Ruta corregida para la imagen de Ana Milena -->
+                      <div class="teampic">
+                          <img src="{{ url_for('static', filename='img/investigadores/milena.PNG') }}" class="img-fluid" alt="Ana Milena Perez">
+                      </div>
+                      <div class="member-info">
+                          <h4>Ana Milena Perez</h4>
+                          <span>Asistente Ejecutivo</span>
+                          <p>Especialización en Alta Gerencia</p>
+                          <div class="social">
+                              <a href="#" style="display: none;"><i class="fa-solid fa-envelope"></i></a>
+                              <a href="https://www.linkedin.com/in/milena-perez-85981a38/"><i class="fa-brands fa-linkedin"></i></a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-lg-6 mt-4">
+                  <div class="member d-flex align-items-start">
+                      <!-- Ruta corregida para la imagen de Cristian Cifuentes -->
+                      <div class="teampic">
+                          <img src="{{ url_for('static', filename='img/investigadores/cifuente.PNG') }}" class="img-fluid" alt="Cristian Cifuentes">
+                      </div>
+                      <div class="member-info">
+                          <h4>Cristian Cifuentes</h4>
+                          <span>Director General</span>
+                          <p>Médico Veterinario</p>
+                          <div class="social">
+                              <a href="#" style="display: none;"><i class="fa-solid fa-envelope"></i></a>
+                              <a href="https://www.linkedin.com/in/cristian-cifuentes-1b6bb91a9"><i class="fa-brands fa-linkedin"></i></a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Segunda fila -->
+          <div class="row">
+              <div class="col-lg-6 mt-4">
+                  <div class="member d-flex align-items-start">
+                      <!-- Ruta corregida para la imagen de Andres Palacios -->
+                      <div class="teampic">
+                          <img src="{{ url_for('static', filename='img/investigadores/palacios.jpg') }}" class="img-fluid" alt="Andres Palacios Gonzalez">
+                      </div>
+                      <div class="member-info">
+                          <h4>Andres Palacios Gonzalez</h4>
+                          <span>Coordinador de Proyectos Innovación Exponencial</span>
+                          <p>Máster en Relaciones Internacionales</p>
+                          <div class="social">
+                              <a href="#" style="display: none;"><i class="fa-solid fa-envelope"></i></a>
+                              <a href="https://www.linkedin.com/in/andres-palacios-gonzalez-90bbb954"><i class="fa-brands fa-linkedin"></i></a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-lg-6 mt-4">
+                  <div class="member d-flex align-items-start">
+                      <!-- Ruta corregida para la imagen de Carlos Rodriguez -->
+                      <div class="teampic">
+                          <img src="{{ url_for('static', filename='img/investigadores/carlos alberto rodriguez.jpg') }}" class="img-fluid" alt="Carlos Rodriguez Arias">
+                      </div>
+                      <div class="member-info">
+                          <h4>Carlos Rodriguez Arias</h4>
+                          <span>Coordinador Inteligencia Competitiva</span>
+                          <p>Maestría en Administración y Gestión de Empresas</p>
+                          <div class="social">
+                              <a href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001020099" style="display: block;">
+                                  <i class="fa-solid fa-envelope"></i>
+                              </a>
+                              <a href="https://www.linkedin.com/in/alejandra-molina-chaux-75ab9622a/"><i class="fa-brands fa-linkedin"></i></a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Tercera fila -->
+          <div class="row">
+              <div class="col-lg-6 mt-4">
+                  <div class="member d-flex align-items-start">
+                      <!-- Ruta corregida para la imagen de Alejandra Molina -->
+                      <div class="teampic">
+                          <img src="{{ url_for('static', filename='img/investigadores/Alejandra Molina.jpg') }}" class="img-fluid" alt="Alejandra Molina Chaux">
+                      </div>
+                      <div class="member-info">
+                          <h4>Alejandra Molina Chaux</h4>
+                          <span>Departamento Jurídico</span>
+                          <p>Abogada especialista en Derecho Público</p>
+                          <div class="social">
+                              <a href="#" style="display: none;"><i class="fa-solid fa-envelope"></i></a>
+                              <a href="https://www.linkedin.com/in/alejandra-molina-chaux-75ab9622a/"><i class="fa-brands fa-linkedin"></i></a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+  </section>
+</main>
+{% endblock %}

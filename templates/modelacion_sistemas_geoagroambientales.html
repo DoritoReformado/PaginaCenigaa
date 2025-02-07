@@ -1,0 +1,45 @@
+{%extends 'base.html'%}
+{%block title%}Modelacion Sistemas GeoAgroAmbientales{% endblock %}
+
+{% block css_input %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/black_nav.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/investigaciones.css') }}">
+{% endblock %}
+
+{%block content%}
+<div id="cuarta_Carta">
+  <div class="card">
+      <div class="titulo">
+          Cuarta Línea Investigativa: Modelación en dinámicas de sistemas GeoAgroAmbientales
+      </div>
+      <div class="factores">
+          <p class="subtitulo">Factores Críticos de la cadena</p>
+          <p>Aplicación de herramientas de modelación para evaluar el estado histórico, actual y futuro de los recursos
+              naturales, su disponibilidad y uso potencial.</p>
+      </div>
+      <div class="importancia">
+          <p class="subtitulo">Importancia y relevancia para los sectores</p>
+          <p>La modelación de recursos naturales provee información científica para regular su uso sostenible, orientando
+              su gestión como factores clave para el desarrollo a largo plazo.</p>
+      </div>
+      <div class="objetivos">
+          <p>Objetivos de desarrollo sostenible a los que apunta</p>
+          <div class="row_ods">
+              <img class="ods_image" src="{{ url_for('static', filename='img/ODS/S-WEB-Goal-06.png') }}" alt="Objetivo 6">
+              <img class="ods_image" src="{{ url_for('static', filename='img/ODS/S-WEB-Goal-09.png') }}" alt="Objetivo 9">
+              <img class="ods_image" src="{{ url_for('static', filename='img/ODS/S-WEB-Goal-12.png') }}" alt="Objetivo 12">
+              <img class="ods_image" src="{{ url_for('static', filename='img/ODS/S-WEB-Goal-13.png') }}" alt="Objetivo 13">
+              <img class="ods_image" src="{{ url_for('static', filename='img/ODS/S-WEB-Goal-15.png') }}" alt="Objetivo 15">
+          </div>
+      </div>
+      <div class="lineamientos">
+          <p>Lineamientos del PND a los que apunta</p>
+          <p>Ordenamiento del territorio alrededor del agua y justicia ambiental. Catalizadores: 1, 3 y 4.</p>
+          <p>Seguridad humana y justicia social. Catalizadores: B.</p>
+          <p>Derecho humano a la alimentación. Catalizadores: 1, 3 y 5.</p>
+          <p>Internacionalización, transformación productiva para la vida y acción climática. Catalizadores: A, B y C.</p>
+          <p>Convergencia Regional. Catalizadores: 4.</p>
+      </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,52 @@
+{%extends 'base.html'%}
+{%block title%}Objetivos de desarrollo sostenible{% endblock %}
+
+{% block css_input %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/black_nav.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/complementos.css') }}">
+{% endblock %}
+
+{% block content %}
+
+<div class="container-content segundo" id="responsabilidad_social">
+
+    <h1>Responsabilidad Social en CENIGAA</h1>
+
+    <div class="highlight">
+        <p>En CENIGAA, estamos comprometidos con el desarrollo sostenible y el bienestar de las comunidades con las
+            que interactuamos. Nuestra responsabilidad social va más allá del cumplimiento de las normativas,
+            abarcando acciones que contribuyen positivamente al entorno social y ambiental.</p>
+        <img src="{{ url_for('static', filename='img/responsabilidad_social.jpg') }}" alt="Responsabilidad Social en CENIGAA" style="width: 100%; margin-top: 20px;">
+    </div>
+
+    <h2>¿Qué es la Responsabilidad Social?</h2>
+    <p>La responsabilidad social en CENIGAA implica un compromiso activo con el bienestar de la sociedad y el medio
+        ambiente, buscando generar un impacto positivo a través de nuestras acciones y proyectos. Nos enfocamos en
+        ser una organización responsable en términos sociales, económicos y ambientales.</p>
+
+    <h2>Acciones de Responsabilidad Social en CENIGAA</h2>
+    <p>Algunas de nuestras principales acciones en este ámbito incluyen:</p>
+    <ul>
+        <li><strong>Proyectos de sostenibilidad ambiental:</strong> Implementamos estrategias para minimizar el
+            impacto ambiental en todas nuestras operaciones.</li>
+        <li><strong>Apoyo a las comunidades locales:</strong> Fomentamos programas de desarrollo y capacitación que
+            benefician a las comunidades cercanas.</li>
+        <li><strong>Fomento de la educación:</strong> Participamos en iniciativas que promueven la educación y
+            formación técnica en áreas de interés científico.</li>
+        <li><strong>Transparencia y ética:</strong> Adoptamos prácticas empresariales responsables y transparentes
+            en cada una de nuestras operaciones.</li>
+    </ul>
+
+    <h2>Compromiso con el Futuro</h2>
+    <p>En CENIGAA, creemos que el éxito de nuestra organización va de la mano con el desarrollo sostenible de las
+        comunidades y el medio ambiente. Nuestro compromiso con la responsabilidad social nos impulsa a seguir
+        trabajando por un futuro más equitativo y respetuoso con el planeta.</p>
+    <!--
+    <div class="download-section" style="margin-top: 20px;">
+        <p>Descarga nuestro informe de Responsabilidad Social:</p>
+        <a href="{{ url_for('static', filename='docs/responsabilidad_social.pdf') }}" target="_blank" class="btn btn-primary">
+            Descargar Informe
+        </a>
+    </div>-->
+</div>
+{% endblock %}
